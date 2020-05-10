@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             xmlns:MenuPages="clr-namespace:ExpenseManager.View"
+             xmlns:MasterPageItemClass="clr-namespace:ExpenseManager.Model"
+             IconImageSource="hamburger.png"
+             Title="Menu"
+             x:Class="ExpenseManager.View.MenuPage">
+    <StackLayout>
+        <ListView x:Name="listView" x:FieldModifier="public">
+            <ListView.ItemsSource>
+                <x:Array Type="{x:Type MasterPageItemClass:MasterPageItem}">
+                    <MasterPageItemClass:MasterPageItem Title="Dashboard"  IconSource="home_icon.png" TargetType="{x:Type MenuPages:Dashboard}" />
+                    <MasterPageItemClass:MasterPageItem Title="TestPage"  IconSource="" TargetType="{x:Type MenuPages:TestPage}" />
+                </x:Array>
+            </ListView.ItemsSource>
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell Height="50">
+                        <Grid Padding="5,10">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="50"/>
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="AUTO"/>
+                            </Grid.RowDefinitions>
+                            <Image Source="{Binding IconSource}"
+                                   Grid.Row="0"
+                                   Grid.Column="0"
+                                   HorizontalOptions="Center" />
+                            <Label Grid.Column="1"
+                                   Grid.Row="0"
+                                   Text="{Binding Title}"
+                                   Margin="10,0,0,0"/>
+                        </Grid>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+</ContentPage>
