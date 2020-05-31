@@ -6,10 +6,38 @@
              mc:Ignorable="d"
              x:Class="ExpenseManager.View.Dashboard">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="This is dashboard page"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+        <Grid Padding="40, 100, 40, 0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="200"/>                
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>                
+            </Grid.ColumnDefinitions>
+
+
+            <!--Record GPS Trip-->
+            <StackLayout Grid.Row="0"
+                         Grid.Column="0"
+                         BackgroundColor="LightGray">
+
+                <ImageButton x:Name="recordGpsTripbtn" 
+                             Grid.Row="0"
+                             Grid.Column="0"
+                             Source="trip_icon.png"
+                             Clicked="recordGpsTripbtn_Clicked"
+                             BackgroundColor="Transparent"
+                             VerticalOptions="Center"
+                             Margin="0,50,0,0"/>
+                
+                <Label Text="Record GPS trip"
+                       HorizontalOptions="Center"
+                       VerticalTextAlignment="Center"/>
+            </StackLayout>
+            
+            
+            
+        </Grid>
     </ContentPage.Content>
 </ContentPage>

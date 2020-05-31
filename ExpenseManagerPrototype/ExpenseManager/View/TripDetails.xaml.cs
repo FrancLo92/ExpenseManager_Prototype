@@ -10,16 +10,21 @@ using Xamarin.Forms.Xaml;
 namespace ExpenseManager.View
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Dashboard : ContentPage
+    public partial class TripDetails : ContentPage
     {
-        public Dashboard()
+        public TripDetails()
         {
             InitializeComponent();
         }
 
-        private async void recordGpsTripbtn_Clicked(object sender, EventArgs e)
+        private async void saveBtn_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new GPSTrip());
+            await Navigation.PopToRootAsync();
+        }
+
+        private async void deleteTripBtn_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PopToRootAsync();
         }
     }
 }
