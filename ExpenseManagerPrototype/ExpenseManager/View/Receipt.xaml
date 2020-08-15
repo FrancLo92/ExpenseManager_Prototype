@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="ExpenseManager.View.Receipt">
+
+    <!--TOOLBAR ITEMS-->
+    <!--Add Vehicle button Located in the Toolbar-->
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="+ Manual Receipt"
+                 Order="Primary"
+                 Priority="1"
+                 Clicked="addManualReceipt_Clicked"/>
+    </ContentPage.ToolbarItems>
+    <!--TOOLBAR ITEMS - END-->
+    
+    <ContentPage.Content>
+        <ScrollView>
+
+            <!--Outer Layout-->
+            <StackLayout>
+                
+                <!--Receipt List outer container-->
+                <StackLayout x:Name="tripListOuterContainer"
+                             Margin="10,30,10,10">
+
+                    <Label Text="Vehicle Trip List"
+                           FontSize="Medium"/>
+
+                    <!-- This list is bound to the trip object. 
+                    each car has his own trip list object-->
+                    <ListView x:Name="receiptListView" 
+                              ItemSelected="receiptListView_ItemSelected"
+                                ItemsSource="{Binding ReceiptList}"                  
+                                HasUnevenRows="True" 
+                                HorizontalOptions="Center"
+                                Margin="10">
+
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <ViewCell>
+                                    <StackLayout Orientation='Horizontal' 
+                                            HeightRequest="70"
+                                                 Margin="15">
+
+                                        <Image Source="receipts_icon.png"/>
+
+                                        <StackLayout Orientation="Vertical"
+                                                     Margin="10,0,0,0"
+                                                     HorizontalOptions="Start">
+
+                                            <!--Receipt Merchant-->
+                                            <Label Text="{Binding Merchant}"
+                                                    FontAttributes="Bold"
+                                                    FontSize="Medium"/>
+                                        </StackLayout>
+
+                                        <StackLayout Orientation="Vertical" 
+                                                     HorizontalOptions="EndAndExpand">
+
+                                            <!--Receipt Total km-->
+                                            <Label  FontAttributes="Bold"
+                                                    FontSize="Medium"
+                                                    HorizontalTextAlignment="End">
+                                                <Label.FormattedText>
+                                                    <FormattedString>
+                                                        <Span Text=" $"/>
+                                                        <Span Text="{Binding Total}"/>                                                        
+                                                    </FormattedString>
+                                                </Label.FormattedText>
+                                            </Label>
+
+                                            <!--Receipt-->
+                                            <Label Text="{Binding Date}"
+                                                    FontSize="Small"
+                                                   HorizontalTextAlignment="End"/>
+
+                                        </StackLayout>
+                                    </StackLayout>
+                                </ViewCell>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                </StackLayout>
+            </StackLayout>
+
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

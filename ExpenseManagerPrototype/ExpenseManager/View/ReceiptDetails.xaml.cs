@@ -10,21 +10,21 @@ using Xamarin.Forms.Xaml;
 namespace ExpenseManager.View
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Dashboard : ContentPage
+    public partial class ReceiptDetails : ContentPage
     {
-        public Dashboard()
+        public ReceiptDetails()
         {
             InitializeComponent();
         }
 
-        private async void recordGpsTripBtn_Clicked(object sender, EventArgs e)
+        private async void saveBtn_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new GPSTrip());
+            await Navigation.PopToRootAsync();
         }
 
-        private async void scanReceiptBtn_Clicked(object sender, EventArgs e)
+        private async void deleteReceiptBtn_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new Receipt());
+            await Navigation.PopToRootAsync();
         }
     }
 }

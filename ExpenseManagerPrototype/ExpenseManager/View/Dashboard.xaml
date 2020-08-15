@@ -6,6 +6,7 @@
              mc:Ignorable="d"
              x:Class="ExpenseManager.View.Dashboard">
     <ContentPage.Content>
+        <!--Dashboard Grid Layout-->
         <Grid Padding="40, 100, 40, 0">
             <Grid.RowDefinitions>
                 <RowDefinition Height="200"/>                
@@ -17,27 +18,46 @@
             </Grid.ColumnDefinitions>
 
 
-            <!--Record GPS Trip-->
+            <!--Record GPS Trip-->            
             <StackLayout Grid.Row="0"
                          Grid.Column="0"
                          BackgroundColor="LightGray">
 
-                <ImageButton x:Name="recordGpsTripbtn" 
+                <ImageButton x:Name="recordGpsTripBtn"
+                             VerticalOptions="EndAndExpand"
+                             HorizontalOptions="Center"
                              Grid.Row="0"
                              Grid.Column="0"
                              Source="trip_icon.png"
-                             Clicked="recordGpsTripbtn_Clicked"
-                             BackgroundColor="Transparent"
-                             VerticalOptions="Center"
-                             Margin="0,50,0,0"/>
+                             Clicked="recordGpsTripBtn_Clicked"
+                             BackgroundColor="Transparent"/>
                 
                 <Label Text="Record GPS trip"
-                       HorizontalOptions="Center"
-                       VerticalTextAlignment="Center"/>
+                       VerticalOptions="StartAndExpand"
+                       HorizontalOptions="Center"/>
             </StackLayout>
             
-            
-            
+            <!--Scan Receipt-->
+            <StackLayout Grid.Row="0"
+                         Grid.Column="1"
+                         BackgroundColor="LightGray">
+
+                <ImageButton x:Name="scanReceiptBtn" 
+                             Grid.Row="0"
+                             Grid.Column="0"
+                             Source="scanner_icon.png"
+                             Clicked="scanReceiptBtn_Clicked"
+                             BackgroundColor="Transparent"
+                             VerticalOptions="EndAndExpand"
+                             HorizontalOptions="Center"/>
+
+                <Label Text="Scan Receipt"
+                       VerticalOptions="StartAndExpand"
+                       HorizontalOptions="Center"/>
+            </StackLayout>
+
+
+
         </Grid>
     </ContentPage.Content>
 </ContentPage>

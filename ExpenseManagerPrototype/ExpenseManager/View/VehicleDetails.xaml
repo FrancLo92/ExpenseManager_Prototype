@@ -72,7 +72,7 @@
 
             </StackLayout>
 
-            <!--Year-->
+            <!--Engine Capacity-->
             <StackLayout Grid.Row="4"
                         Margin="10"
                         HorizontalOptions="Fill">
