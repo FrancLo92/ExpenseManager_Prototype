@@ -15,6 +15,7 @@ namespace ExpenseManager.View
         public ReceiptDetails()
         {
             InitializeComponent();
+            BindingContext = this;
         }
 
         private async void saveBtn_Clicked(object sender, EventArgs e)

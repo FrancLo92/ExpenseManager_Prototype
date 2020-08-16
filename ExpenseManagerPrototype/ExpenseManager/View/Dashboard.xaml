@@ -26,8 +26,6 @@
                 <ImageButton x:Name="recordGpsTripBtn"
                              VerticalOptions="EndAndExpand"
                              HorizontalOptions="Center"
-                             Grid.Row="0"
-                             Grid.Column="0"
                              Source="trip_icon.png"
                              Clicked="recordGpsTripBtn_Clicked"
                              BackgroundColor="Transparent"/>
@@ -43,8 +41,6 @@
                          BackgroundColor="LightGray">
 
                 <ImageButton x:Name="scanReceiptBtn" 
-                             Grid.Row="0"
-                             Grid.Column="0"
                              Source="scanner_icon.png"
                              Clicked="scanReceiptBtn_Clicked"
                              BackgroundColor="Transparent"
@@ -55,8 +51,6 @@
                        VerticalOptions="StartAndExpand"
                        HorizontalOptions="Center"/>
             </StackLayout>
-
-
 
         </Grid>
     </ContentPage.Content>
