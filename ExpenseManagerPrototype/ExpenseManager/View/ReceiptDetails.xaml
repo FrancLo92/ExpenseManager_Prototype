@@ -4,7 +4,8 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="ExpenseManager.View.ReceiptDetails">
+             x:Class="ExpenseManager.View.ReceiptDetails"
+             Title="Receipt Details">
 
     <!--TOOLBAR ITEMS-->
     <!--Add Vehicle button Located in the Toolbar-->

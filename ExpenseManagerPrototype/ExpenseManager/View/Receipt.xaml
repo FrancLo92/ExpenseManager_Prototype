@@ -4,7 +4,8 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="ExpenseManager.View.Receipt">
+             x:Class="ExpenseManager.View.Receipt"
+             Title="Receipt">
 
     <!--TOOLBAR ITEMS-->
     <!--Add Vehicle button Located in the Toolbar-->
@@ -26,7 +27,7 @@
                 <StackLayout x:Name="tripListOuterContainer"
                              Margin="10,30,10,10">
 
-                    <Label Text="Vehicle Trip List"
+                    <Label Text="Receipt List"
                            FontSize="Medium"/>
 
                     <!-- This list is bound to the trip object. 
