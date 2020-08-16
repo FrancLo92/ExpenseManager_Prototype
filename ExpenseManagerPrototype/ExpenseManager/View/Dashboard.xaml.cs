@@ -16,5 +16,17 @@ namespace ExpenseManager.View
         {
             InitializeComponent();
         }
+
+        private /*async*/ void requestAppointmentBtn_Clicked(object sender, EventArgs e)
+        {
+            //await Navigation.PushAsync(new Appointment());
+            //will link to https://thekalculators.com.au/book-an-appointment/
+        }
+
+        private /*async*/ void locateUsBtn_Clicked(object sender, EventArgs e)
+        {
+            //await Navigation.PushAsync(new LocateUs());
+            //will link to https://thekalculators.com.au/locations/
+        }
     }
 }
