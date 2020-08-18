@@ -22,9 +22,9 @@ namespace ExpenseManager.View
             await Navigation.PushAsync(new Dashboard());
         }
 
-        private /*async*/ void signUpBtn_Clicked(object sender, EventArgs e)
+        private async void SignUpBtn_Clicked(object sender, EventArgs e)
         {
-            //await Navigation.PushAsync(new SignUp());
+            await Navigation.PushAsync(new SignUp());
         }
     }
 }
