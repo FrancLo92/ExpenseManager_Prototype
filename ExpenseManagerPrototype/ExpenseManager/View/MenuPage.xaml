@@ -14,6 +14,9 @@
             <ListView.ItemsSource>
                 <x:Array Type="{x:Type MasterPageItemClass:MasterPageItem}">
                     <MasterPageItemClass:MasterPageItem Title="Dashboard"  IconSource="home_icon.png" TargetType="{x:Type MenuPages:Dashboard}" />
+                    <MasterPageItemClass:MasterPageItem Title="Login"  IconSource="" TargetType="{x:Type MenuPages:LoginPage}"/>
+                    <MasterPageItemClass:MasterPageItem Title="Request Appointment"  IconSource="" TargetType="{x:Type MenuPages:RequestAppointment}"/>
+                    <MasterPageItemClass:MasterPageItem Title="Locate Us"  IconSource="" TargetType="{x:Type MenuPages:LocateUs}"/>
                     <MasterPageItemClass:MasterPageItem Title="TestPage"  IconSource="" TargetType="{x:Type MenuPages:TestPage}" />
                 </x:Array>
             </ListView.ItemsSource>
