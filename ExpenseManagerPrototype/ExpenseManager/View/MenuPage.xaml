@@ -13,7 +13,10 @@
         <ListView x:Name="listView" x:FieldModifier="public">
             <ListView.ItemsSource>
                 <x:Array Type="{x:Type MasterPageItemClass:MasterPageItem}">
+                    <MasterPageItemClass:MasterPageItem Title="Profile"  IconSource="" TargetType="{x:Type MenuPages:Profile}" />
                     <MasterPageItemClass:MasterPageItem Title="Dashboard"  IconSource="home_icon.png" TargetType="{x:Type MenuPages:Dashboard}" />
+                    <MasterPageItemClass:MasterPageItem Title="Notifications"  IconSource="" TargetType="{x:Type MenuPages:Notifications}" />
+                    <MasterPageItemClass:MasterPageItem Title="Share Workspace"  IconSource="" TargetType="{x:Type MenuPages:ShareWorkspace}" />
                     <MasterPageItemClass:MasterPageItem Title="TestPage"  IconSource="" TargetType="{x:Type MenuPages:TestPage}" />
                 </x:Array>
             </ListView.ItemsSource>
