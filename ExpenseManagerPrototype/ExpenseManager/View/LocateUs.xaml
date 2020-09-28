@@ -6,7 +6,7 @@
              mc:Ignorable="d"
              x:Class="ExpenseManager.View.LocateUs">
     <ContentPage.Content>
-        <Grid>
+        <!--<Grid>
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto"/>
                 <RowDefinition Height="Auto"/>
@@ -32,6 +32,6 @@
                    FontSize="Title"/>
 
 
-        </Grid>
+        </Grid>-->
     </ContentPage.Content>
 </ContentPage>
