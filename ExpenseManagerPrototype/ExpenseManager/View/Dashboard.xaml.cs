@@ -19,14 +19,12 @@ namespace ExpenseManager.View
 
         private async void requestAppointmentBtn_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new RequestAppointment());
-            //will link to https://thekalculators.com.au/book-an-appointment/
+            await Navigation.PushAsync(new RequestAppointment());            
         }
 
         private async void locateUsBtn_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new LocateUs());
-            //will link to https://thekalculators.com.au/locations/
+            await Navigation.PushAsync(new LocateUs());            
         }
     }
 }
