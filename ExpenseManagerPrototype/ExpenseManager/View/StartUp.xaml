@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="ExpenseManager.View.StartUp">
+    <ContentPage.Content>
+        <Grid Padding="40, 20, 40, 0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="100"/>
+                <RowDefinition Height="AUTO"/>
+                <RowDefinition Height="200"/>
+                <RowDefinition Height="AUTO"/>
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <!--Logo-->
+            <Image Source="logo.png"
+                   Grid.Row="0"
+                   Grid.ColumnSpan="2"
+                   VerticalOptions="Start"
+                   HorizontalOptions="Center"/>
+            
+
+            <!--App Introduction-->
+            <StackLayout Grid.Row="1"
+                         Grid.ColumnSpan="2">                
+
+                <Label Text="The Kalkulators offers many services 
+                       to their customers.The Kalkulators Application 
+                       offers new services such as managing deductions, vehicles and their mileage."
+                       VerticalOptions="Start"
+                       HorizontalTextAlignment="Center"
+                       Margin="0,20,0,20"/>
+            </StackLayout>
+
+
+            <!--Request Appointment-->
+            <StackLayout Grid.Row="2"
+                         Grid.Column="0"
+                         BackgroundColor="LightGray">
+
+                <ImageButton x:Name="requestAppointmentBtn"
+                             VerticalOptions="EndAndExpand"
+                             HorizontalOptions="Center"
+                             Grid.Row="0"
+                             Grid.Column="0"
+                             Source="appointment_icon.png"
+                             BackgroundColor="Transparent"
+                             Clicked="requestAppointmentBtn_Clicked"/>
+
+                <Label Text="Request Appointment"
+                       VerticalOptions="StartAndExpand"
+                       HorizontalOptions="Center"/>
+            </StackLayout>
+
+            <!--Locate Us-->
+            <StackLayout Grid.Row="2"
+                         Grid.Column="1"
+                         BackgroundColor="LightGray">
+
+                <ImageButton x:Name="locateUsBtn" 
+                             Grid.Row="0"
+                             Grid.Column="0"
+                             Source="findus_icon.png"
+                             BackgroundColor="Transparent"
+                             VerticalOptions="EndAndExpand"
+                             HorizontalOptions="Center"
+                             Clicked="locateUsBtn_Clicked"/>
+
+                <Label Text="Locate Us"
+                       VerticalOptions="StartAndExpand"
+                       HorizontalOptions="Center"/>
+            </StackLayout>
+
+            <Button Text="Login / Sign up"
+                    Grid.Row="3"
+                    Grid.ColumnSpan="2"
+                    VerticalOptions="Center"
+                    HorizontalOptions="Center"
+                    Clicked="loginSignupBtn_Clicked"/>
+
+
+
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

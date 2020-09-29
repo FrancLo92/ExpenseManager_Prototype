@@ -17,8 +17,10 @@
                     <MasterPageItemClass:MasterPageItem Title="Vehicle Logbook"  IconSource="mileage_icon.png" TargetType="{x:Type MenuPages:VehicleLogbook}"/>
                     <MasterPageItemClass:MasterPageItem Title="Receipt"  IconSource="receipts_icon.png" TargetType="{x:Type MenuPages:Receipt}"/>
                     <MasterPageItemClass:MasterPageItem Title="Share Data"  IconSource="share_icon.png" TargetType="{x:Type MenuPages:ShareData}"/>
-                    <MasterPageItemClass:MasterPageItem Title="TestPage"  IconSource="" TargetType="{x:Type MenuPages:TestPage}" />
-                </x:Array>
+                    <MasterPageItemClass:MasterPageItem Title="Request Appointment"  IconSource="appointment_icon.png" TargetType="{x:Type MenuPages:RequestAppointment}"/>
+                    <MasterPageItemClass:MasterPageItem Title="Locate Us"  IconSource="findus_icon.png" TargetType="{x:Type MenuPages:LocateUs}"/>
+                 </x:Array>
+
             </ListView.ItemsSource>
             <ListView.ItemTemplate>
                 <DataTemplate>

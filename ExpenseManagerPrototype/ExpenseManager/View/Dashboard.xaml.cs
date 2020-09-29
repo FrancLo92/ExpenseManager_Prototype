@@ -9,6 +9,7 @@ using ExpenseManager.Model;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
 
 namespace ExpenseManager.View
 {
@@ -31,7 +32,7 @@ namespace ExpenseManager.View
 
             if (!CrossMedia.Current.IsCameraAvailable || !CrossMedia.Current.IsTakePhotoSupported)
             {
-                DisplayAlert("No Camera", ":( No camera available.", "OK");
+                await DisplayAlert("No Camera", ":( No camera available.", "OK");
                 return;
             }
 
@@ -75,5 +76,19 @@ namespace ExpenseManager.View
         }
 
 
+        private async void requestAppointmentBtn_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new RequestAppointment());            
+        }
+
+        private async void locateUsBtn_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new LocateUs());            
+        }
+
+        private void logOutBtn_Clicked(object sender, EventArgs e)
+        {
+            App.Current.MainPage = new NavigationPage(new StartUp());
+        }
     }
 }
