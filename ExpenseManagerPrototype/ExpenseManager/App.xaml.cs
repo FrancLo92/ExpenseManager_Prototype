@@ -10,7 +10,7 @@ namespace ExpenseManager
         {
             InitializeComponent();
 
-            MainPage = new View.MainPage();
+            MainPage = new NavigationPage(new View.StartUp());
         }
 
         protected override void OnStart()

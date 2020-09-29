@@ -5,6 +5,14 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="ExpenseManager.View.Dashboard">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="LOG OUT"
+                    Order="Primary"
+                    Priority="1"
+                     Clicked="logOutBtn_Clicked"/>
+    </ContentPage.ToolbarItems>
+    
     <ContentPage.Content>
         <Grid Padding="40, 100, 40, 0">
             <Grid.RowDefinitions>

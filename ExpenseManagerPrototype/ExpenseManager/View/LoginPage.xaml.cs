@@ -17,9 +17,15 @@ namespace ExpenseManager.View
             InitializeComponent();
         }
 
-        private async void loginBtn_Clicked(object sender, EventArgs e)
+        private void loginBtn_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new Dashboard());
+            MasterDetailPage loggedInMaster = new MasterDetailPage
+            {
+                Master = new MenuPage(),
+                Detail = new MainPage()
+                
+            };
+            Application.Current.MainPage = loggedInMaster;
         }
 
         private async void SignUpBtn_Clicked(object sender, EventArgs e)

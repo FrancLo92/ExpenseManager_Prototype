@@ -19,12 +19,12 @@ namespace ExpenseManager.View
 
         private async void signUpBtn_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new Dashboard());
+            await Navigation.PushAsync(new LoginPage());
         }
 
         private async void cancelSignUpBtn_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new Dashboard());
+            await Navigation.PushAsync(new StartUp());
         }
 
         

@@ -26,5 +26,10 @@ namespace ExpenseManager.View
         {
             await Navigation.PushAsync(new LocateUs());            
         }
+
+        private void logOutBtn_Clicked(object sender, EventArgs e)
+        {
+            App.Current.MainPage = new NavigationPage(new StartUp());
+        }
     }
 }
