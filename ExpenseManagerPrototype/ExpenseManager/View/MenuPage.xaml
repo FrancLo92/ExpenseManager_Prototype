@@ -15,9 +15,19 @@
                 <x:Array Type="{x:Type MasterPageItemClass:MasterPageItem}">
                     <MasterPageItemClass:MasterPageItem Title="Profile"  IconSource="" TargetType="{x:Type MenuPages:Profile1}" />
                     <MasterPageItemClass:MasterPageItem Title="Dashboard"  IconSource="home_icon.png" TargetType="{x:Type MenuPages:Dashboard}" />
+<<<<<<< HEAD
                     <MasterPageItemClass:MasterPageItem Title="Notifications"  IconSource="" TargetType="{x:Type MenuPages:Notifications}" />
                     <MasterPageItemClass:MasterPageItem Title="Share Workspace"  IconSource="" TargetType="{x:Type MenuPages:ShareWorkspace}" />
                 </x:Array>
+=======
+                    <MasterPageItemClass:MasterPageItem Title="Vehicle Logbook"  IconSource="mileage_icon.png" TargetType="{x:Type MenuPages:VehicleLogbook}"/>
+                    <MasterPageItemClass:MasterPageItem Title="Receipt"  IconSource="receipts_icon.png" TargetType="{x:Type MenuPages:Receipt}"/>
+                    <MasterPageItemClass:MasterPageItem Title="Share Data"  IconSource="share_icon.png" TargetType="{x:Type MenuPages:ShareData}"/>
+                    <MasterPageItemClass:MasterPageItem Title="Request Appointment"  IconSource="appointment_icon.png" TargetType="{x:Type MenuPages:RequestAppointment}"/>
+                    <MasterPageItemClass:MasterPageItem Title="Locate Us"  IconSource="findus_icon.png" TargetType="{x:Type MenuPages:LocateUs}"/>
+                 </x:Array>
+
+>>>>>>> ef68ba0d9d17e992d78b9dc2bade5060b5113924
             </ListView.ItemsSource>
             <ListView.ItemTemplate>
                 <DataTemplate>

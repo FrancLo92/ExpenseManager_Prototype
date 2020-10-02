@@ -10,9 +10,9 @@ using Xamarin.Forms.Xaml;
 namespace ExpenseManager.View
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class TestPage : ContentPage
+    public partial class ShareData : ContentPage
     {
-        public TestPage()
+        public ShareData()
         {
             InitializeComponent();
         }

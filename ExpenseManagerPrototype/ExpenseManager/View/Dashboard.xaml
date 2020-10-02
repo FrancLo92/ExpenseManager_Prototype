@@ -5,11 +5,104 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="ExpenseManager.View.Dashboard">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="LOG OUT"
+                    Order="Primary"
+                    Priority="1"
+                     Clicked="logOutBtn_Clicked"/>
+    </ContentPage.ToolbarItems>
+    
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="This is dashboard page"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+        <!--Dashboard Grid Layout-->
+        <Grid Padding="40, 100, 40, 0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="200"/>
+				<RowDefinition Height="200"/>
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>  
+				<ColumnDefinition Width="*"/>  
+            </Grid.ColumnDefinitions>
+
+
+            <!--Record GPS Trip-->
+			<StackLayout Grid.Row="0"
+                         Grid.Column="0"
+                         BackgroundColor="LightGray">
+
+
+                <ImageButton x:Name="recordGpsTripBtn"
+                             VerticalOptions="EndAndExpand"
+                             HorizontalOptions="Center"
+                             Source="trip_icon.png"
+                             Clicked="recordGpsTripBtn_Clicked"
+                             BackgroundColor="Transparent"/>
+                
+                <Label Text="Record GPS trip"
+                       VerticalOptions="StartAndExpand"
+                       HorizontalOptions="Center"/>
+            </StackLayout>  
+			
+			<!--Scan Receipt-->
+			
+			<StackLayout Grid.Row="0"
+                         Grid.Column="1"
+                         BackgroundColor="LightGray">
+				<ImageButton x:Name="scanReceiptBtn" 
+                             Source="scanner_icon.png"
+                             Clicked="scanReceiptBtn_Clicked"
+                             VerticalOptions="EndAndExpand"
+                             HorizontalOptions="Center"/>                
+					   
+				<Label Text="Scan Receipt"
+                       VerticalOptions="StartAndExpand"
+                       HorizontalOptions="Center"/>
+            </StackLayout>              
+
+
+            <!--Request Appointment-->
+
+            <StackLayout Grid.Row="1"
+                         Grid.Column="0"
+                         BackgroundColor="LightGray">
+						 
+				<ImageButton x:Name="requestAppointmentBtn"
+					 VerticalOptions="EndAndExpand"
+					 HorizontalOptions="Center"
+					 Source="appointment_icon.png"
+					 Clicked="requestAppointmentBtn_Clicked"
+					 BackgroundColor="Transparent"/>
+
+                <Label Text="Request Appointment"
+                       VerticalOptions="StartAndExpand"
+                       HorizontalOptions="Center"/>
+
+                
+            </StackLayout>            
+            
+
+            <!--Locate Us-->
+
+            <StackLayout Grid.Row="1"
+                         Grid.Column="1"
+                         BackgroundColor="LightGray">
+
+
+                <ImageButton x:Name="locateUsBtn"
+                             Source="findus_icon.png"
+                             Clicked="locateUsBtn_Clicked"
+                             BackgroundColor="Transparent"
+                             VerticalOptions="EndAndExpand"
+                             HorizontalOptions="Center"/>
+
+                <Label Text="Locate Us"
+                       VerticalOptions="StartAndExpand"
+                       HorizontalOptions="Center"/>
+					   
+            </StackLayout>
+
+        </Grid>
     </ContentPage.Content>
 </ContentPage>
