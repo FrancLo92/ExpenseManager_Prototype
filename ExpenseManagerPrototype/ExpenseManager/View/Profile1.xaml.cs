@@ -21,9 +21,14 @@ namespace ExpenseManager.View
         {
             await Navigation.PushAsync(new ChangePassword());
         }
-        private async void SignOutBtn_Clicked(object sender, EventArgs e)
+        private void SignOutBtn_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new SignOut());
+             App.Current.MainPage = new NavigationPage(new StartUp());
+        }
+
+        private async void saveProfileChanges_Clicked(object sender, EventArgs e)
+        {
+          
         }
     }
 }

@@ -5,6 +5,13 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="ExpenseManager.View.Profile1">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="SAVE CHANGES"
+                    Order="Primary"
+                    Priority="1"
+                     Clicked="saveProfileChanges_Clicked"/>
+    </ContentPage.ToolbarItems>
     <ContentPage.Content>
         <Grid>
             <Grid.RowDefinitions>

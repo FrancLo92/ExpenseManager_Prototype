@@ -1,4 +1,4 @@
-﻿ml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ExpenseManager.View.ShareWorkspace">
@@ -23,30 +23,30 @@
                    Margin="30"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
-            
+
             <Label Text="Do you want to give Kalculators access to your information?" 
                    Grid.Row="1"
                    VerticalOptions="StartAndExpand" 
                    HorizontalOptions="CenterAndExpand"
                    Margin="50,20,30,0"
                    HorizontalTextAlignment="Center"/>
-            
+
             <Switch IsToggled="false" VerticalOptions="Start" 
                     HorizontalOptions="CenterAndExpand" 
                     Grid.Row="2"/>
-            
+
             <Label Text="Simply share this code with your Kalculators Consultant, and they will be able to download your receipts directly and include them in your tax return. The consultant will not be able to modify your information,and disabling the feature at any point will remove their access." VerticalOptions="StartAndExpand" 
                    HorizontalOptions="CenterAndExpand"
                    Grid.Row="3"
                    Margin="30,20,30,0"
                    HorizontalTextAlignment="Center"/>
-            
+
             <Label Text="My Kalculator Share Code" VerticalOptions="Center" 
                    HorizontalOptions="Center"
                    Margin="30,20,30,0"
                    HorizontalTextAlignment="Center"
                    Grid.Row="4"/>
-            
+
             <StackLayout Orientation="Horizontal" 
                          Grid.Row="5" 
                          HorizontalOptions="Center">
@@ -56,7 +56,5 @@
                 <BoxView BackgroundColor="Gray"  HorizontalOptions="CenterAndExpand"/>
             </StackLayout>
         </Grid>
-        
-       
     </ContentPage.Content>
 </ContentPage>
