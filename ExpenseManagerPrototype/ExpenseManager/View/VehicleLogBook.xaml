@@ -1,0 +1,214 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="ExpenseManager.View.VehicleLogbook">
+    
+    <!--TOOLBAR ITEMS-->
+     <!--Add Vehicle button Located in the Toolbar-->
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Add Vehicle"
+                 Order="Primary"
+                 Priority="1"
+                     Clicked="addVehicle_Clicked"/>
+    </ContentPage.ToolbarItems>
+    
+    <!--Select Vehicle button located in the Toolbar-->
+    <NavigationPage.TitleView >
+        <StackLayout Orientation="Horizontal" VerticalOptions="Start" Spacing="0" >
+            <Button Text="Select Vehicle &#xfe40;"
+                    x:Name="selectVehicleBtn"
+                    Clicked="selectVehicleBtn_Clicked"
+                    TextColor="White"
+                    HorizontalOptions="Start"
+                    BackgroundColor="Transparent"/>
+        </StackLayout>
+    </NavigationPage.TitleView>
+    <!--TOOLBAR ITEMS - END-->
+
+    <ContentPage.Content>
+        <ScrollView>
+            
+            <!--Outer Layout-->
+            <StackLayout>
+
+             <!--Vehicle List outer container-->
+                <StackLayout IsVisible="False"
+                             x:Name="vehicleListOuterContainer"
+                             Margin="10">
+
+                    <Label Text="Select Vehicle"/>
+
+                    <!-- This list is bound to the vehicle object. The list will only be visible once "select Vehicle"
+                    is pressed in the tollbar menu-->
+                    <ListView x:Name="vehicleListView" 
+                                HeightRequest="300"
+                                ItemSelected="vehicleListView_ItemSelected"
+                                ItemsSource="{Binding VehicleList}"                  
+                                HasUnevenRows="True" 
+                                HorizontalOptions="Center"
+                                Margin="10">
+
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <ViewCell>
+                                    <StackLayout Orientation='Vertical' 
+                                            HeightRequest="100"
+                                            WidthRequest="100"
+                                            Margin="5"
+                                            BackgroundColor="LightGray">
+                                        <!--Number Plate-->
+                                        <Label Text="{Binding numberPlate}"
+                                        FontAttributes="Bold"
+                                        FontSize="Medium"
+                                        HorizontalTextAlignment="Center"/>
+
+                                        <!--Vehicle Make-->
+                                        <Label Text="{Binding make}"
+                                        FontSize="Small"
+                                        HorizontalTextAlignment="Center"/>
+
+                                        <!--Vehicle Model-->
+                                        <Label Text="{Binding model}"
+                                        FontSize="Small"
+                                        HorizontalTextAlignment="Center"/>
+
+                                    </StackLayout>
+
+                                </ViewCell>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+
+                </StackLayout>
+
+                <!--Selected Vehilce Layout-->
+                <StackLayout x:Name="selectedVehicleOuterContainer"
+                             Orientation="Vertical"
+                             Margin="10, 20, 10, 10">
+                    
+                    <Label Text="Selected Vehicle"/>
+
+                    <StackLayout Orientation="Horizontal">
+                        
+                        <Image Source="vehicle_icon.png"
+                           HorizontalOptions="Start"/>
+
+                        <StackLayout Orientation="Vertical"
+                                 HorizontalOptions="StartAndExpand"
+                                 Margin="20,0,0,0">
+
+                            <StackLayout Orientation="Horizontal">
+
+                                <Label x:Name="makeTxt" 
+                                FontAttributes="Bold"/>
+
+                                <Label x:Name="modelTxt"
+                                FontAttributes="Bold"/>
+
+                            </StackLayout>
+
+                            <Label x:Name="numPlateTxt"/>
+
+                        </StackLayout>
+                           
+                        <!--Edit Vehicle Button-->
+                        <ImageButton x:Name="editVehiclebtn"
+                                     Clicked="editVehiclebtn_Clicked"
+                                 Source="edit_icon.png"
+                                 HorizontalOptions="End"
+                                 BackgroundColor="Transparent"/>
+
+                    </StackLayout>
+
+                    
+
+                </StackLayout>
+
+
+                <!--Trip List outer container-->
+                <StackLayout x:Name="tripListOuterContainer"
+                             Margin="10,30,10,10">
+
+                    <Label Text="Vehicle Trip List"
+                           FontSize="Medium"/>
+
+                    <!-- This list is bound to the trip object. 
+                    each care has his own trip list object-->
+                    <ListView x:Name="tripListView" 
+                              ItemSelected="tripListView_ItemSelected"
+                                ItemsSource="{Binding TripList}"                  
+                                HasUnevenRows="True" 
+                                HorizontalOptions="Center"
+                                Margin="10">
+
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <ViewCell>
+                                    <StackLayout Orientation='Horizontal' 
+                                            HeightRequest="70"
+                                                 Margin="15">
+
+                                        <Image Source="trip_icon.png"/>
+
+                                        <StackLayout Orientation="Vertical"
+                                                     Margin="10,0,0,0"
+                                                     HorizontalOptions="Start">
+                                            
+                                            <!--Trip destination-->
+                                            <Label Text="{Binding destination}"
+                                                    FontAttributes="Bold"
+                                                    FontSize="Medium"/>
+
+                                            <!--Trip from-->                                            
+                                            <Label FontSize="Small">
+                                                <Label.FormattedText>
+                                                    <FormattedString>
+                                                        <Span Text="From "/>
+                                                        <Span Text="{Binding from}"/>
+                                                    </FormattedString>
+                                                </Label.FormattedText>
+                                            </Label>
+
+                                        </StackLayout>
+
+                                        <StackLayout Orientation="Vertical" 
+                                                     HorizontalOptions="EndAndExpand">
+
+                                            <!--Trip km-->
+                                            <Label  FontAttributes="Bold"
+                                                    FontSize="Medium"
+                                                    HorizontalTextAlignment="End">
+                                                <Label.FormattedText>
+                                                    <FormattedString>
+                                                        <Span Text="{Binding km}"/>
+                                                        <Span Text=" km"/>
+                                                    </FormattedString>
+                                                </Label.FormattedText>
+                                            </Label>
+
+                                            <!--Trip from-->
+                                            <Label Text="{Binding date}"
+                                                    FontSize="Small"
+                                                   HorizontalTextAlignment="End"/>
+
+                                        </StackLayout>
+                                        
+                                    </StackLayout>
+
+                                </ViewCell>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+
+                </StackLayout>
+                <Button Clicked="Button_Clicked"
+                        Text="cazz"/>
+            </StackLayout>
+
+        </ScrollView>
+
+    </ContentPage.Content>
+</ContentPage>

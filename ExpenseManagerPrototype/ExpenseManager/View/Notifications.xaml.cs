@@ -10,7 +10,7 @@ using Xamarin.Forms.Xaml;
 namespace ExpenseManager.View
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Notifications : ContentView
+    public partial class Notifications : ContentPage
     {
         public Notifications()
         {

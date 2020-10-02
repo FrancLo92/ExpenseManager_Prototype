@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="ExpenseManager.View.VehicleDetails">
+
+    <!--TOOLBAR ITEMS-->
+    <!--Add Vehicle button Located in the Toolbar-->
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Save"
+                 Order="Primary"
+                 Priority="1"
+                     Clicked="saveVehicle_Clicked"
+                     />
+    </ContentPage.ToolbarItems>
+
+    <ContentPage.Content>
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+
+            <!--License Plate-->
+            <StackLayout Grid.Row="0"
+                        Margin="10"
+                        HorizontalOptions="Fill">
+
+                <Label Text="License Plate"/>
+
+                <Entry Placeholder="AA545X" />
+            </StackLayout>
+
+            <!--Make-->
+            <StackLayout Grid.Row="1"
+                        Margin="10"
+                        HorizontalOptions="Fill">
+
+                <Label Text="Make"/>
+
+                <Entry Placeholder="Honda" />
+            </StackLayout>
+
+            <!--Model-->
+            <StackLayout Grid.Row="2"
+                        Margin="10"
+                        HorizontalOptions="Fill">
+
+                <Label Text="Model"/>
+                    
+                <Entry Placeholder="civic" />
+
+            </StackLayout>
+
+            <!--Year-->
+            <StackLayout Grid.Row="3"
+                        Margin="10"
+                        HorizontalOptions="Fill">
+
+                <Label Text="Year"/>
+
+                <Entry Placeholder="2018" />
+
+            </StackLayout>
+
+            <!--Engine Capacity-->
+            <StackLayout Grid.Row="4"
+                        Margin="10"
+                        HorizontalOptions="Fill">
+
+                <Label Text="Engine Capacity"/>
+
+                <Entry Placeholder="1600" />
+
+            </StackLayout>
+
+            <!--Odometer reading-->
+            <StackLayout Grid.Row="5"
+                        Margin="10"
+                        HorizontalOptions="Fill">
+
+                <Label Text="Odometer Reading"/>
+
+                <Entry Placeholder="xxxxx" />
+
+            </StackLayout>
+
+            <!--Delete Trip Button-->
+            <Button x:Name="deleteVehicleBtn"
+                        BackgroundColor="LightGray"
+                        Clicked="deleteVehicleBtn_Clicked"
+                        Text="Delete Vehicle"
+                        Grid.Row="6"
+                        TextColor="Red"
+                        Margin="10"/>
+
+
+
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

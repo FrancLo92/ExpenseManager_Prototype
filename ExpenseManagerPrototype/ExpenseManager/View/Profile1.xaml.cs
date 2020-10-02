@@ -10,22 +10,20 @@ using Xamarin.Forms.Xaml;
 namespace ExpenseManager.View
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class ChangePassword : ContentPage
+    public partial class Profile1 : ContentPage
     {
-        public ChangePassword()
+        public Profile1()
         {
             InitializeComponent();
         }
 
-       
-        private async void cancelChangePaswdBtn_Clicked(object sender, EventArgs e)
+        private async void ChangePasswordBtn_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PopToRootAsync();
+            await Navigation.PushAsync(new ChangePassword());
         }
-
-        private async void saveNewPaswdBtn_Clicked(object sender, EventArgs e)
+        private async void SignOutBtn_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PopToRootAsync();
+            await Navigation.PushAsync(new SignOut());
         }
     }
 }

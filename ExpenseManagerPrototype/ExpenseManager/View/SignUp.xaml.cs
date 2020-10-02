@@ -10,19 +10,23 @@ using Xamarin.Forms.Xaml;
 namespace ExpenseManager.View
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Profile : ContentPage
+    public partial class SignUp : ContentPage
     {
-        public Profile()
+        public SignUp()
         {
             InitializeComponent();
         }
-        private async void ChangePasswordBtn_Clicked(object sender, EventArgs e)
+
+        private async void signUpBtn_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new ChangePassword());
+            await Navigation.PushAsync(new LoginPage());
         }
-        private async void SignOutBtn_Clicked(object sender, EventArgs e)
+
+        private async void cancelSignUpBtn_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new SignOut());
+            await Navigation.PushAsync(new StartUp());
         }
+
+        
     }
 }

@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="ExpenseManager.View.GPSTrip">
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+
+            <Label Text="GPS Trip"
+                   Grid.ColumnSpan="2"
+                   Grid.Row="0"
+                   Margin="0, 70, 0, 30"
+                   HorizontalOptions="Center"
+                   FontSize="Title"/>
+            
+            <!--Car image-->
+            <Image Source="car_icon.png"
+                   Grid.ColumnSpan="2"
+                   Grid.Row="1"
+                   Margin="20" 
+                   HeightRequest="100"/>
+            <!--Odometer Reading-->
+            <StackLayout Grid.ColumnSpan="2"
+                         Grid.Row="2"
+                         Orientation="Horizontal"
+                         HorizontalOptions="Center">
+
+                <Frame BorderColor="Black">
+                    <Label Text="0"/>
+                </Frame>
+                <Frame BorderColor="Black">
+                    <Label Text="0"/>
+                </Frame>
+                <Frame BorderColor="Black">
+                    <Label Text="0"/>
+                </Frame>
+                <Frame BorderColor="Black"
+                       Margin="0">
+                    <Label Text="0"/>
+                </Frame>
+                <Frame BorderColor="Black"
+                       BackgroundColor="LightGray">
+                    <Label Text="0"/>
+                </Frame>
+            </StackLayout>
+
+            <Label Text="KILOMETERS"
+                   Grid.ColumnSpan="2"
+                   Grid.Row="3"
+                   HorizontalOptions="Center"/>
+            
+            <!--Complete Trip Button-->
+            <Button Text="COMPLETE TRIP"
+                    x:Name="completeTripBtn"
+                    Clicked="completeTripBtn_Clicked"
+                    Grid.ColumnSpan="2"
+                    Grid.Row="4"
+                    Margin="50, 50, 50, 0"/>
+            
+            <!--Cancel Trip Button-->
+            <Button Text="CANCEL"
+                    x:Name="cancelTripBtn"
+                    Clicked="cancelTripBtn_Clicked"
+                    Grid.ColumnSpan="2"
+                    Grid.Row="5"
+                    Margin="50, 50, 50, 0"
+                    BackgroundColor="Transparent"/>
+
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

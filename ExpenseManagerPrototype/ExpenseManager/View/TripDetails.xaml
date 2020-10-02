@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="ExpenseManager.View.TripDetails">
+
+    <!--TOOLBAR ITEMS-->
+    <!--Save Vehicle button Located in the Toolbar-->
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Save"
+                 Order="Primary"
+                 Priority="1"
+                 Clicked="saveBtn_Clicked"/>
+    </ContentPage.ToolbarItems>
+
+    
+    <!--TOOLBAR ITEMS - END-->
+    <ContentPage.Content>
+        <ScrollView>
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <!--START DATE-->
+                <StackLayout Grid.Column="0" 
+                         Grid.Row="0"
+                         Margin="10"
+                         HorizontalOptions="Fill">
+
+                    <Label Text="Start Date"/>
+
+                    <DatePicker />
+                </StackLayout>
+
+                <!--END DATE-->
+                <StackLayout Grid.Column="1" 
+                         Grid.Row="0"
+                         Margin="10"
+                         HorizontalOptions="Fill">
+
+                    <Label Text="End Date"/>
+
+                    <DatePicker />
+                </StackLayout>
+
+                <!--VEHICLE LIST-->
+                <StackLayout Grid.ColumnSpan="2" 
+                         Grid.Row="1"
+                         Margin="10"
+                         HorizontalOptions="Fill">
+
+                    <Label Text="Select Vehicle"/>
+
+                    <!--Must use listview bound to user vehicles 
+                PROTOTYPE EXAMPLE-->
+                    <StackLayout Orientation="Horizontal">
+
+                        <Frame BorderColor="Black"
+                        Margin="10">
+                            <Label Text="Car1"/>
+                        </Frame>
+
+                        <Frame BorderColor="Black"
+                        Margin="10">
+                            <Label Text="Car2"/>
+                        </Frame>
+
+                        <Frame BorderColor="Black"
+                        Margin="10">
+                            <Label Text="Car3"/>
+                        </Frame>
+                    </StackLayout>
+                </StackLayout>
+
+                <!--****************** Distance + Odometer - BEGIN********************-->
+
+                <StackLayout Grid.ColumnSpan="2" 
+                         Grid.Row="2"
+                         Margin="10"
+                         HorizontalOptions="Fill">
+
+                    <Label Text="Distance Travelled"/>
+
+                    <Entry Placeholder="KM" />
+                </StackLayout>
+
+                <StackLayout Grid.Column="0" 
+                         Grid.Row="3"
+                         Margin="10"
+                         HorizontalOptions="Fill">
+
+                    <Label Text="Odometer"/>
+
+                    <Entry Placeholder="0 KM" />
+                </StackLayout>
+
+                <StackLayout Grid.Column="1" 
+                         Grid.Row="3"
+                         Margin="10"
+                         Orientation="Horizontal"
+                         HorizontalOptions="Start">
+
+                    <Label Text="to" 
+                       VerticalOptions="Center"/>
+
+                    <Entry Placeholder="KM" 
+                       WidthRequest="150" />
+                </StackLayout>
+                <!--****************** Distance + Odometer - END********************-->
+
+                <!--Location - From-->
+                <StackLayout Grid.ColumnSpan="2" 
+                         Grid.Row="4"
+                         Margin="10"
+                         HorizontalOptions="Fill">
+
+                    <Label Text="From"/>
+
+                    <Entry Placeholder="Location e.g. Holden Hill" />
+                </StackLayout>
+
+                <!--Location - To-->
+                <StackLayout Grid.ColumnSpan="2" 
+                         Grid.Row="5"
+                         Margin="10"
+                         HorizontalOptions="Fill">
+
+                    <Label Text="To"/>
+
+                    <Entry Placeholder="Location e.g. Adelaide City" />
+                </StackLayout>
+
+
+                <!--Tags-->
+                <StackLayout Grid.ColumnSpan="2" 
+                         Grid.Row="6"
+                         Margin="10"
+                         HorizontalOptions="Fill">
+
+                    <Label Text="PURPOSE OF TRIP"/>
+
+                    <StackLayout Orientation="Horizontal">
+
+                        <Button Text="Business" />
+                        <Button Text="Personal" />
+
+                    </StackLayout>
+                </StackLayout>
+                
+                <!--Delete Trip Button-->
+                <Button x:Name="deleteTripBtn"
+                        BackgroundColor="LightGray"
+                        Clicked="deleteTripBtn_Clicked"
+                        Text="Delete Trip"
+                        Grid.ColumnSpan="2" 
+                        Grid.Row="7"
+                        TextColor="Red"
+                        Margin="10"/>
+
+            </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
