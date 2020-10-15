@@ -14,8 +14,9 @@
     </ContentPage.ToolbarItems>
     
     <ContentPage.Content>
+        <ScrollView>
         <!--Dashboard Grid Layout-->
-        <Grid Padding="10,10,10,0">
+        <Grid Padding="0,10,0,0">
             <Grid.RowDefinitions>
                 <RowDefinition Height="80"/>
                 <RowDefinition Height="20"/>
@@ -29,11 +30,11 @@
             </Grid.ColumnDefinitions>
 
             <!--Header-->
-            <Image Source="logo.png"
-                   
+            <Image Source="logo.png"                   
                    Grid.Row="0"
                    Grid.ColumnSpan="2"
-                   HorizontalOptions="End"/>
+                   HorizontalOptions="End"
+                   Margin="0,0,10,0"/>
             <StackLayout Grid.Row="1"
                          Grid.ColumnSpan="2"/>
 
@@ -131,5 +132,6 @@
             </StackLayout>
 
         </Grid>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

@@ -6,27 +6,34 @@
              mc:Ignorable="d"
              x:Class="ExpenseManager.App">
     <Application.Resources>
-        <!--<Thickness x:Key="PageMargin">20</Thickness>-->
+        <Thickness x:Key="PageMargin">10</Thickness>
 
         <!-- Colors -->
         <Color x:Key="AppBackgroundColor">White</Color>
-        <Color x:Key="NavigationBarColor">#1a9de5</Color>
-        <Color x:Key="NavigationBarTextColor">White</Color>
+        <Color x:Key="PrimaryColor">#1a9de5</Color>
+        <Color x:Key="SecondaryColor">#1179ae</Color>
+        <Color x:Key="OutlineColor">Black</Color>
+        <Color x:Key="ButtonBarTextColor">White</Color>
         <Color x:Key="NormalTextColor">Black</Color>
 
         <!-- Implicit styles -->
+        <Style TargetType="NavigationPage">
+            <Setter Property="BarBackgroundColor" Value="{StaticResource PrimaryColor}" />
+            <Setter Property="BarTextColor" Value="{StaticResource ButtonBarTextColor}" />
+        </Style>
+
         <Style TargetType="{x:Type Button}">
             <Setter Property="BackgroundColor"
-                    Value="{StaticResource NavigationBarColor}" />
+                    Value="{StaticResource PrimaryColor}" />
             <Setter Property="TextColor"
-                    Value="{StaticResource NavigationBarTextColor}" />
+                    Value="{StaticResource ButtonBarTextColor}" />
             <Setter Property="CornerRadius"
                     Value="10" />
         </Style>
 
         <Style TargetType="{x:Type Frame}">
             <Setter Property="BackgroundColor"
-                    Value="{StaticResource NavigationBarColor}" />
+                    Value="{StaticResource PrimaryColor}" />
             <Setter Property="CornerRadius"
                     Value="10" />
             <Setter Property="HorizontalOptions"

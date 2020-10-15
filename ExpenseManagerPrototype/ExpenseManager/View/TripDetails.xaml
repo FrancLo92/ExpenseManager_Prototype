@@ -19,9 +19,10 @@
     <!--TOOLBAR ITEMS - END-->
     <ContentPage.Content>
         <ScrollView>
-
-            <Grid>
+            <Grid Padding="0,10,0,0">
                 <Grid.RowDefinitions>
+                    <RowDefinition Height="80"/>
+                    <RowDefinition Height="20"/>
                     <RowDefinition Height="Auto"/>
                     <RowDefinition Height="Auto"/>
                     <RowDefinition Height="Auto"/>
@@ -38,9 +39,18 @@
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
 
+                <!--Header-->
+                <Image Source="logo.png"
+                       Grid.Row="0"
+                       Grid.ColumnSpan="2"
+                       HorizontalOptions="End"
+                       Margin="0,0,10,0"/>
+                <StackLayout Grid.Row="1"
+                             Grid.ColumnSpan="2"/>
+
                 <!--START DATE-->
                 <StackLayout Grid.Column="0" 
-                         Grid.Row="0"
+                         Grid.Row="2"
                          Margin="10"
                          HorizontalOptions="Fill">
 
@@ -51,7 +61,7 @@
 
                 <!--END DATE-->
                 <StackLayout Grid.Column="1" 
-                         Grid.Row="0"
+                         Grid.Row="2"
                          Margin="10"
                          HorizontalOptions="Fill">
 
@@ -62,7 +72,7 @@
 
                 <!--VEHICLE LIST-->
                 <StackLayout Grid.ColumnSpan="2" 
-                         Grid.Row="1"
+                         Grid.Row="3"
                          Margin="10"
                          HorizontalOptions="Fill">
 
@@ -72,19 +82,23 @@
                 PROTOTYPE EXAMPLE-->
                     <StackLayout Orientation="Horizontal">
 
-                        <Frame BorderColor="Black"
-                        Margin="10">
-                            <Label Text="Car1"/>
+                        <Frame Padding="10,0,10,0">
+                            <Label Text="Car1"
+                                   HorizontalOptions="Center"
+                                   VerticalOptions="Center"/>
                         </Frame>
 
-                        <Frame BorderColor="Black"
-                        Margin="10">
-                            <Label Text="Car2"/>
+                        <Frame Padding="10">
+                            <Label Text="Car2"
+                                   HorizontalOptions="Center"
+                                   VerticalOptions="Center"/>
                         </Frame>
 
-                        <Frame BorderColor="Black"
-                        Margin="10">
-                            <Label Text="Car3"/>
+                        <Frame Padding="10"
+                               BorderColor="{StaticResource OutlineColor}">
+                            <Label Text="Car3"
+                                   HorizontalOptions="Center"
+                                   VerticalOptions="Center"/>
                         </Frame>
                     </StackLayout>
                 </StackLayout>
@@ -92,7 +106,7 @@
                 <!--****************** Distance + Odometer - BEGIN********************-->
 
                 <StackLayout Grid.ColumnSpan="2" 
-                         Grid.Row="2"
+                         Grid.Row="4"
                          Margin="10"
                          HorizontalOptions="Fill">
 
@@ -102,7 +116,7 @@
                 </StackLayout>
 
                 <StackLayout Grid.Column="0" 
-                         Grid.Row="3"
+                         Grid.Row="5"
                          Margin="10"
                          HorizontalOptions="Fill">
 
@@ -112,7 +126,7 @@
                 </StackLayout>
 
                 <StackLayout Grid.Column="1" 
-                         Grid.Row="3"
+                         Grid.Row="5"
                          Margin="10"
                          Orientation="Horizontal"
                          HorizontalOptions="Start">
@@ -127,7 +141,7 @@
 
                 <!--Location - From-->
                 <StackLayout Grid.ColumnSpan="2" 
-                         Grid.Row="4"
+                         Grid.Row="6"
                          Margin="10"
                          HorizontalOptions="Fill">
 
@@ -138,7 +152,7 @@
 
                 <!--Location - To-->
                 <StackLayout Grid.ColumnSpan="2" 
-                         Grid.Row="5"
+                         Grid.Row="7"
                          Margin="10"
                          HorizontalOptions="Fill">
 
@@ -150,7 +164,7 @@
 
                 <!--Tags-->
                 <StackLayout Grid.ColumnSpan="2" 
-                         Grid.Row="6"
+                         Grid.Row="8"
                          Margin="10"
                          HorizontalOptions="Fill">
 
@@ -166,12 +180,10 @@
                 
                 <!--Delete Trip Button-->
                 <Button x:Name="deleteTripBtn"
-                        BackgroundColor="LightGray"
                         Clicked="deleteTripBtn_Clicked"
                         Text="Delete Trip"
                         Grid.ColumnSpan="2" 
-                        Grid.Row="7"
-                        TextColor="Red"
+                        Grid.Row="9"
                         Margin="10"/>
 
             </Grid>

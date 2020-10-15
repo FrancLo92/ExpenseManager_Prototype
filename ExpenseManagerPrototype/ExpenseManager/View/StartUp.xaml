@@ -6,7 +6,8 @@
              mc:Ignorable="d"
              x:Class="ExpenseManager.View.StartUp">
     <ContentPage.Content>
-        <Grid Padding="10, 10, 10, 0">
+        <ScrollView>
+        <Grid Padding="0,10,0,0">
             <Grid.RowDefinitions>
                 <RowDefinition Height="80"/>
                 <RowDefinition Height="20"/>
@@ -21,11 +22,11 @@
             </Grid.ColumnDefinitions>
 
             <!--Header-->
-            <Image Source="logo.png"
-                   
+            <Image Source="logo.png"                   
                    Grid.Row="0"
                    Grid.ColumnSpan="2"
-                   HorizontalOptions="End"/>
+                   HorizontalOptions="End"
+                   Margin="0,0,10,0"/>
             <StackLayout Grid.Row="1"
                          Grid.ColumnSpan="2"/>
 
@@ -33,12 +34,17 @@
             <!--App Introduction-->                 
                 <StackLayout Grid.Row="2"
                          Grid.ColumnSpan="2">
-                
+                <Label Text="Welcome to The Kalculators Expense Manager!"
+                       FontSize="Large"
+                       VerticalOptions="Fill"
+                       HorizontalTextAlignment="Center"
+                       Margin="25,0,25,0"/>
+
 
                 <Label Text="The Kalculators offers many services to their customers. The Kalculators Application offers new services such as managing deductions, vehicles and their mileage."
                        VerticalOptions="Fill"
                        HorizontalTextAlignment="Center"
-                       Margin="25,20,25,20"/>
+                       Margin="25,5,25,20"/>
                 </StackLayout>
             
 
@@ -95,10 +101,11 @@
                     Grid.Row="4"
                     Grid.ColumnSpan="2"
                     VerticalOptions="End"
-                    HorizontalOptions="Center"
-                    Clicked="loginSignupBtn_Clicked"/>
+                    Clicked="loginSignupBtn_Clicked"
+                    Margin=" 50,20,50,0"/>
 
 
         </Grid>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

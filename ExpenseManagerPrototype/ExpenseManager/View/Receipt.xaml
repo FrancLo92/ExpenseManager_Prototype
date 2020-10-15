@@ -19,13 +19,31 @@
     
     <ContentPage.Content>
         <ScrollView>
+            <Grid Padding="0,10,0,0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="80"/>
+                    <RowDefinition Height="20"/>
+                    <RowDefinition Height="Auto"/>
 
-            <!--Outer Layout-->
-            <StackLayout>
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <!--Header-->
+                <Image Source="logo.png"                   
+                   Grid.Row="0"
+                   HorizontalOptions="End"
+                   Margin="0,0,10,0"/>
+                <StackLayout Grid.Row="1"/>
+
+                <!--Outer Layout-->
+                <StackLayout Grid.Row="2">
                 
                 <!--Receipt List outer container-->
                 <StackLayout x:Name="tripListOuterContainer"
-                             Margin="10,30,10,10">
+                             Margin="10,0,10,10">
 
                     <Label Text="Receipt List"
                            FontSize="Medium"/>
@@ -85,8 +103,8 @@
                         </ListView.ItemTemplate>
                     </ListView>
                 </StackLayout>
-            </StackLayout>
-
+                </StackLayout>
+            </Grid>
         </ScrollView>
     </ContentPage.Content>
 </ContentPage>

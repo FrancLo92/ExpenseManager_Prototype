@@ -30,9 +30,27 @@
 
     <ContentPage.Content>
         <ScrollView>
-            
-            <!--Outer Layout-->
-            <StackLayout>
+            <Grid Padding="0,10,0,0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="80"/>
+                    <RowDefinition Height="20"/>
+                    <RowDefinition Height="Auto"/>
+
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <!--Header-->
+                <Image Source="logo.png"                   
+                   Grid.Row="0"
+                   HorizontalOptions="End"
+                   Margin="0,0,10,0"/>
+                <StackLayout Grid.Row="1"/>
+
+                <!--Outer Layout-->
+                <StackLayout  Grid.Row="2">
 
              <!--Vehicle List outer container-->
                 <StackLayout IsVisible="False"
@@ -205,10 +223,9 @@
 
                 </StackLayout>
                 <Button Clicked="Button_Clicked"
-                        Text="cazz"/>
-            </StackLayout>
-
+                        Text="NEW GPS TRIP"/>
+                </StackLayout>
+            </Grid>
         </ScrollView>
-
     </ContentPage.Content>
 </ContentPage>
