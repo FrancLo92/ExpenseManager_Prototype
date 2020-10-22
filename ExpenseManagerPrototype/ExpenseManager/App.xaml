@@ -41,7 +41,7 @@
             <Setter Property="VerticalOptions"
                     Value="FillAndExpand" />
             <Setter Property="HasShadow"
-                    Value="True" />
+                    Value="False" />
             <Setter Property="IsClippedToBounds"
                     Value="True" />
             <Setter Property="Padding"

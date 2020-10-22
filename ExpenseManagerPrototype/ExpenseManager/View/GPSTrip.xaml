@@ -38,7 +38,7 @@
                 <StackLayout Grid.Row="2"
                              Grid.ColumnSpan="2"
                              Margin="0, 0, 0, 10">
-                    <Label Text="GPS Trip" 
+                    <Label Text="Record GPS Trip" 
                             
                             HorizontalOptions="Center"
                             FontSize="Title"/>
@@ -59,38 +59,41 @@
                          Orientation="Horizontal"
                          HorizontalOptions="Center">
 
-                <Frame Padding="10"
-                       >
+                <Frame Padding="10">
                     <Label Text="0"
                            HorizontalOptions="Center"
                            VerticalOptions="Center"
                            TextColor="{StaticResource ButtonBarTextColor}"
-                           FontSize="Medium"/>
+                           FontSize="Large"/>
                 </Frame>
                 <Frame Padding="10">
                     <Label Text="0"
                            HorizontalOptions="Center"
                            VerticalOptions="Center"
-                           TextColor="{StaticResource ButtonBarTextColor}"/>
+                           TextColor="{StaticResource ButtonBarTextColor}"
+                           FontSize="Large"/>
                 </Frame>
                 <Frame Padding="10">
                     <Label Text="0"
                            HorizontalOptions="Center"
                            VerticalOptions="Center"
-                           TextColor="{StaticResource ButtonBarTextColor}"/>
+                           TextColor="{StaticResource ButtonBarTextColor}"
+                           FontSize="Large"/>
                 </Frame>
                 <Frame Padding="10"
                        Margin="0">
                     <Label Text="0"
                            HorizontalOptions="Center"
                            VerticalOptions="Center"
-                           TextColor="{StaticResource ButtonBarTextColor}"/>
+                           TextColor="{StaticResource ButtonBarTextColor}"
+                           FontSize="Large"/>
                 </Frame>
                 <Frame Padding="10">
                     <Label Text="0"
                            HorizontalOptions="Center"
                            VerticalOptions="Center"
-                           TextColor="{StaticResource ButtonBarTextColor}"/>
+                           TextColor="{StaticResource ButtonBarTextColor}"
+                           FontSize="Large"/>
                 </Frame>
             </StackLayout>
 

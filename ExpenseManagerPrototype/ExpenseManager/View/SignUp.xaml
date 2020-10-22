@@ -41,7 +41,7 @@
             <!--Text Fields-->
             <StackLayout Grid.Row="2"
                         Grid.ColumnSpan="2"
-                        Margin="10"
+                        Margin="25,10,25,10"
                         HorizontalOptions="Fill">
 
                 <Label Text="First Name"/>
@@ -52,7 +52,7 @@
 
             <StackLayout Grid.Row="3"
                         Grid.ColumnSpan="2"
-                        Margin="10"
+                        Margin="25,10,25,10"
                         HorizontalOptions="Fill">
 
                 <Label Text="Last Name"/>
@@ -63,7 +63,7 @@
             
             <StackLayout Grid.Row="4"
                         Grid.ColumnSpan="2"
-                        Margin="10"
+                        Margin="25,10,25,10"
                         HorizontalOptions="Fill">
 
                 <Label Text="Email"/>
@@ -74,7 +74,7 @@
 
             <StackLayout Grid.Row="5"
                         Grid.ColumnSpan="2"
-                        Margin="10"
+                        Margin="25,10,25,10"
                         HorizontalOptions="Fill">
 
                 <Label Text="Password"/>
@@ -85,7 +85,7 @@
 
             <StackLayout Grid.Row="6"
                         Grid.ColumnSpan="2"
-                        Margin="10"
+                        Margin="25,10,25,10"
                         HorizontalOptions="Fill">
 
                 <Label Text="Confirm Password"/>
@@ -100,7 +100,7 @@
                     Clicked="signUpBtn_Clicked"
                     Grid.ColumnSpan="2"
                     Grid.Row="7"
-                    Margin="50, 20, 50, 0"/>
+                    Margin="50, 25, 50, 0"/>
 
             <!--Cancel Sign Up Button // Return to Log In-->
             <Button Text="CANCEL"
@@ -109,7 +109,7 @@
                     Grid.ColumnSpan="2"
                     Grid.Row="8"
                     Margin="50, 30, 50, 0"
-                    BackgroundColor="Transparent"/>
+                    BackgroundColor="{StaticResource SecondaryColor}"/>
 
         </Grid>
             </ScrollView>
