@@ -11,15 +11,21 @@
         <!-- Colors -->
         <Color x:Key="AppBackgroundColor">White</Color>
         <Color x:Key="PrimaryColor">#1a9de5</Color>
-        <Color x:Key="SecondaryColor">#1179ae</Color>
+        <Color x:Key="SecondaryColor">#FF8B45</Color>
         <Color x:Key="OutlineColor">Black</Color>
-        <Color x:Key="ButtonBarTextColor">White</Color>
+        <Color x:Key="ButtonBarTextColor">Black</Color>
         <Color x:Key="NormalTextColor">Black</Color>
 
+        <!-- Fonts -->
         <OnPlatform x:Key="MaterialFontFamily" x:TypeArguments="x:String">
             <On Platform="iOS" Value="Material Design Icons" />
             <On Platform="Android" Value="materialdesignicons-webfont.ttf#Material Design Icons" />
             <On Platform="UWP" Value="Assets/Fonts/materialdesignicons-webfont.ttf#Material Design Icons" />
+        </OnPlatform>
+        <OnPlatform x:Key="UbuntuFontFamily" x:TypeArguments="x:String">
+            <On Platform="iOS" Value="Ubuntu Font" />
+            <On Platform="Android" Value="Ubuntu-R.ttf#Ubuntu Font" />
+            <On Platform="UWP" Value="Assets/Fonts/Ubuntu-R.ttf#Ubuntu Font" />
         </OnPlatform>
 
         <!-- Implicit styles -->
@@ -28,13 +34,22 @@
             <Setter Property="BarTextColor" Value="{StaticResource ButtonBarTextColor}" />
         </Style>
 
+        <Style TargetType="{x:Type Label}">
+            <Setter Property="FontFamily"
+                    Value="{StaticResource UbuntuFontFamily}" />
+        </Style>
+        <Style TargetType="{x:Type Entry}">
+            <Setter Property="FontFamily"
+                    Value="{StaticResource UbuntuFontFamily}" />
+        </Style>
+
         <Style TargetType="{x:Type Button}">
             <Setter Property="BackgroundColor"
                     Value="{StaticResource PrimaryColor}" />
             <Setter Property="TextColor"
                     Value="{StaticResource ButtonBarTextColor}" />
             <Setter Property="CornerRadius"
-                    Value="10" />
+                    Value="25" />
         </Style>
 
         <Style TargetType="{x:Type Frame}">

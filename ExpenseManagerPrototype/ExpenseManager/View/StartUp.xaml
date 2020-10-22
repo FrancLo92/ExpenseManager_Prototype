@@ -34,7 +34,7 @@
                 <!--App Introduction-->
                 <StackLayout Grid.Row="2"
                              Grid.ColumnSpan="2">
-                    <Label Text="Welcome to The Kalculators Expense Manager!"
+                    <Label Text="WELCOME TO THE KALCULATORS EXPENSE MANAGER!"
                        FontSize="Large"
                        VerticalOptions="Fill"
                        HorizontalTextAlignment="Center"
@@ -132,6 +132,7 @@
                         Grid.ColumnSpan="2"
                         VerticalOptions="End"
                         Clicked="loginSignupBtn_Clicked"
+                        BackgroundColor="{StaticResource SecondaryColor}"
                         Margin=" 50,25,50,0"/>
 
             </Grid>
