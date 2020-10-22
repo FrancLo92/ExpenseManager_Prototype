@@ -82,20 +82,25 @@
                 PROTOTYPE EXAMPLE-->
                     <StackLayout Orientation="Horizontal">
 
-                        <Frame Padding="10,0,10,0">
+                        <Frame Padding="10,5,10,5"
+                               BackgroundColor="{StaticResource PrimaryColor}"
+                               CornerRadius="25">
                             <Label Text="Car1"
                                    HorizontalOptions="Center"
                                    VerticalOptions="Center"/>
                         </Frame>
 
-                        <Frame Padding="10">
+                        <Frame Padding="10,5,10,5"
+                               BackgroundColor="{StaticResource PrimaryColor}"
+                               CornerRadius="25">
                             <Label Text="Car2"
                                    HorizontalOptions="Center"
                                    VerticalOptions="Center"/>
                         </Frame>
 
-                        <Frame Padding="10"
-                               BackgroundColor="{StaticResource SecondaryColor}">
+                        <Frame Padding="10,5,10,5"
+                               BackgroundColor="{StaticResource SecondaryColor}"
+                               CornerRadius="25">
                             <Label Text="Car3"
                                    HorizontalOptions="Center"
                                    VerticalOptions="Center"/>
@@ -118,11 +123,12 @@
                 <StackLayout Grid.Column="0" 
                          Grid.Row="5"
                          Margin="25,10,25,10"
-                         HorizontalOptions="Fill">
+                         HorizontalOptions="Start">
 
                     <Label Text="Odometer"/>
 
-                    <Entry Placeholder="0 KM" />
+                    <Entry Placeholder="0 KM"
+                           WidthRequest="120"/>
                 </StackLayout>
 
                 <StackLayout Grid.Column="1" 
@@ -131,11 +137,10 @@
                          Orientation="Horizontal"
                          HorizontalOptions="Start">
 
-                    <Label Text="to" 
-                       VerticalOptions="Center"/>
+                    <Label Text="to"/>
 
                     <Entry Placeholder="KM" 
-                       WidthRequest="150" />
+                       WidthRequest="120" />
                 </StackLayout>
                 <!--****************** Distance + Odometer - END********************-->
 

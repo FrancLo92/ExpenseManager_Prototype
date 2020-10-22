@@ -52,7 +52,7 @@
                     Value="25" />
         </Style>
 
-        <Style TargetType="{x:Type Frame}">
+        <!--<Style TargetType="{x:Type Frame}">
             <Setter Property="BackgroundColor"
                     Value="{StaticResource PrimaryColor}" />
             <Setter Property="CornerRadius"
@@ -67,7 +67,7 @@
                     Value="True" />
             <Setter Property="Padding"
                     Value="0" />
-        </Style>
+        </Style>-->
         
 
 

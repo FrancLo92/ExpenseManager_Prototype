@@ -59,36 +59,40 @@
                          Orientation="Horizontal"
                          HorizontalOptions="Center">
 
-                <Frame Padding="10">
-                    <Label Text="0"
-                           HorizontalOptions="Center"
-                           VerticalOptions="Center"
-                           TextColor="{StaticResource ButtonBarTextColor}"
-                           FontSize="Large"/>
-                </Frame>
-                <Frame Padding="10">
-                    <Label Text="0"
-                           HorizontalOptions="Center"
-                           VerticalOptions="Center"
-                           TextColor="{StaticResource ButtonBarTextColor}"
-                           FontSize="Large"/>
-                </Frame>
-                <Frame Padding="10">
-                    <Label Text="0"
-                           HorizontalOptions="Center"
-                           VerticalOptions="Center"
-                           TextColor="{StaticResource ButtonBarTextColor}"
-                           FontSize="Large"/>
-                </Frame>
                 <Frame Padding="10"
-                       Margin="0">
+                       BorderColor="{StaticResource OutlineColor}">
                     <Label Text="0"
                            HorizontalOptions="Center"
                            VerticalOptions="Center"
                            TextColor="{StaticResource ButtonBarTextColor}"
                            FontSize="Large"/>
                 </Frame>
-                <Frame Padding="10">
+                    <Frame Padding="10"
+                       BorderColor="{StaticResource OutlineColor}">
+                    <Label Text="0"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Center"
+                           TextColor="{StaticResource ButtonBarTextColor}"
+                           FontSize="Large"/>
+                </Frame>
+                    <Frame Padding="10"
+                       BorderColor="{StaticResource OutlineColor}">
+                    <Label Text="0"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Center"
+                           TextColor="{StaticResource ButtonBarTextColor}"
+                           FontSize="Large"/>
+                </Frame>
+                    <Frame Padding="10"
+                       BorderColor="{StaticResource OutlineColor}">
+                    <Label Text="0"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Center"
+                           TextColor="{StaticResource ButtonBarTextColor}"
+                           FontSize="Large"/>
+                </Frame>
+                    <Frame Padding="10"
+                       BorderColor="{StaticResource OutlineColor}">
                     <Label Text="0"
                            HorizontalOptions="Center"
                            VerticalOptions="Center"

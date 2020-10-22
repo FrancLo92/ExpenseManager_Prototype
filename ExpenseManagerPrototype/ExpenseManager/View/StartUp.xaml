@@ -62,7 +62,13 @@
                 <StackLayout Grid.Row="3"
                         Grid.Column="0"                        
                         Margin="25,0,4,0">
-                    <Frame>
+                    <Frame BackgroundColor="{StaticResource PrimaryColor}"
+                           CornerRadius="25"
+                           HorizontalOptions="Fill"
+                           VerticalOptions="FillAndExpand"
+                           IsClippedToBounds="True"
+                           Padding="0"
+                           HasShadow="False">
                         <StackLayout>
                             <Image
                                 HeightRequest="44"
@@ -87,6 +93,22 @@
                     </Frame>
                 </StackLayout>
 
+                <!--Custom Frame Corners Request Appointment-->
+                <Frame Grid.Row="3"
+                       Grid.Column="0"
+                       Margin="25,0,4,0"
+                       BackgroundColor="{StaticResource PrimaryColor}"
+                       HorizontalOptions="Start"
+                       VerticalOptions="Start"
+                       HasShadow="False"/>
+                <Frame Grid.Row="3"
+                       Grid.Column="0"
+                       Margin="25,0,4,0"
+                       BackgroundColor="{StaticResource PrimaryColor}"
+                       HorizontalOptions="End"
+                       VerticalOptions="End"
+                       HasShadow="False"/>
+                
 
                 <!--Locate Us-->
                 <Button x:Name="locateUsBtn"
@@ -100,7 +122,13 @@
                 <StackLayout Grid.Row="3"
                          Grid.Column="1"
                          Margin="4,0,25,0">
-                    <Frame>
+                    <Frame BackgroundColor="{StaticResource PrimaryColor}"
+                           CornerRadius="25"
+                           HorizontalOptions="Fill"
+                           VerticalOptions="FillAndExpand"
+                           IsClippedToBounds="True"
+                           Padding="0"
+                           HasShadow="False">
                         <StackLayout>
                             <Image
                                 HeightRequest="44"
@@ -124,7 +152,23 @@
                         </StackLayout>
                     </Frame>
                 </StackLayout>
-                
+
+                <!--Custom Frame Corners Receipt-->
+                <Frame Grid.Row="3"
+                       Grid.Column="1"
+                       Margin="4,0,25,0"
+                       BackgroundColor="{StaticResource PrimaryColor}"
+                       HorizontalOptions="Start"
+                       VerticalOptions="Start"
+                       HasShadow="False"/>
+                <Frame Grid.Row="3"
+                       Grid.Column="1"
+                       Margin="4,0,25,0"
+                       BackgroundColor="{StaticResource PrimaryColor}"
+                       HorizontalOptions="End"
+                       VerticalOptions="End"
+                       HasShadow="False"/>
+
 
                 <!--Login Button-->
                 <Button Text="Login / Sign up"
