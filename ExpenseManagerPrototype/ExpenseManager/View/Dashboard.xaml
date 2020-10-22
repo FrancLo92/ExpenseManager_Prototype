@@ -53,11 +53,19 @@
                          Margin="25,0,4,0">
                     <Frame>
                         <StackLayout>
-                            <Image x:Name="recordGpsTripImg"
-                             VerticalOptions="EndAndExpand"
-                             HorizontalOptions="Center"
-                             Source="trip_icon.png"
-                             BackgroundColor="Transparent"/>
+                            <Image
+                                HeightRequest="44"
+                                VerticalOptions="EndAndExpand"
+                                HorizontalOptions="Center"
+                                WidthRequest="44">
+                                <Image.Source>
+                                    <FontImageSource
+                                        FontFamily="{StaticResource MaterialFontFamily}"
+                                        Glyph="&#xf0350;"
+                                        Size="44"
+                                        Color="{StaticResource ButtonBarTextColor}" />
+                                </Image.Source>
+                            </Image>
 
                             <Label Text="Record GPS trip"
                                VerticalOptions="StartAndExpand"
@@ -84,10 +92,19 @@
                          Margin="4,0,25,0">
                     <Frame>
                         <StackLayout>
-                            <Image x:Name="scanReceiptImg" 
-                             Source="scanner_icon.png"
-                             VerticalOptions="EndAndExpand"
-                             HorizontalOptions="Center"/>
+                            <Image
+                                HeightRequest="44"
+                                VerticalOptions="EndAndExpand"
+                                HorizontalOptions="Center"
+                                WidthRequest="44">
+                                <Image.Source>
+                                    <FontImageSource
+                                        FontFamily="{StaticResource MaterialFontFamily}"
+                                        Glyph="&#xf0100;"
+                                        Size="44"
+                                        Color="{StaticResource ButtonBarTextColor}" />
+                                </Image.Source>
+                            </Image>
 
                             <Label Text="Scan Receipt"
                                VerticalOptions="StartAndExpand"
@@ -114,10 +131,19 @@
                     <Frame>
                         <StackLayout>
 
-                            <Image x:Name="requestAppointmentImg"
-					        VerticalOptions="EndAndExpand"
-					        HorizontalOptions="Center"
-					        Source="appointment_icon.png"/>
+                            <Image
+                                HeightRequest="44"
+                                VerticalOptions="EndAndExpand"
+                                HorizontalOptions="Center"
+                                WidthRequest="44">
+                                <Image.Source>
+                                    <FontImageSource
+                                        FontFamily="{StaticResource MaterialFontFamily}"
+                                        Glyph="&#xf00f0;"
+                                        Size="44"
+                                        Color="{StaticResource ButtonBarTextColor}" />
+                                </Image.Source>
+                            </Image>
 
                             <Label Text="Request Appointment"
                             VerticalOptions="StartAndExpand"
@@ -145,10 +171,19 @@
                     <Frame>
                         <StackLayout>
 
-                            <Image x:Name="locateUsImg"
-                             Source="findus_icon.png"
-                             VerticalOptions="EndAndExpand"
-                             HorizontalOptions="Center"/>
+                            <Image
+                                HeightRequest="44"
+                                VerticalOptions="EndAndExpand"
+                                HorizontalOptions="Center"
+                                WidthRequest="44">
+                                <Image.Source>
+                                    <FontImageSource
+                                        FontFamily="{StaticResource MaterialFontFamily}"
+                                        Glyph="&#xf034d;"
+                                        Size="44"
+                                        Color="{StaticResource ButtonBarTextColor}" />
+                                </Image.Source>
+                            </Image>
 
                             <Label Text="Locate Us"
                             VerticalOptions="StartAndExpand"

@@ -16,6 +16,12 @@
         <Color x:Key="ButtonBarTextColor">White</Color>
         <Color x:Key="NormalTextColor">Black</Color>
 
+        <OnPlatform x:Key="MaterialFontFamily" x:TypeArguments="x:String">
+            <On Platform="iOS" Value="Material Design Icons" />
+            <On Platform="Android" Value="materialdesignicons-webfont.ttf#Material Design Icons" />
+            <On Platform="UWP" Value="Assets/Fonts/materialdesignicons-webfont.ttf#Material Design Icons" />
+        </OnPlatform>
+
         <!-- Implicit styles -->
         <Style TargetType="NavigationPage">
             <Setter Property="BarBackgroundColor" Value="{StaticResource PrimaryColor}" />

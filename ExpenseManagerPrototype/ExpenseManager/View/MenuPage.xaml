@@ -13,14 +13,14 @@
         <ListView x:Name="listView" x:FieldModifier="public">
             <ListView.ItemsSource>
                 <x:Array Type="{x:Type MasterPageItemClass:MasterPageItem}">
-                    <MasterPageItemClass:MasterPageItem Title="Profile"  IconSource="" TargetType="{x:Type MenuPages:Profile1}" />
-                    <MasterPageItemClass:MasterPageItem Title="Dashboard"  IconSource="home_icon.png" TargetType="{x:Type MenuPages:Dashboard}" />
-                    <MasterPageItemClass:MasterPageItem Title="Notifications"  IconSource="" TargetType="{x:Type MenuPages:Notifications}" />
-                    <MasterPageItemClass:MasterPageItem Title="Share Workspace"  IconSource="" TargetType="{x:Type MenuPages:ShareWorkspace}" />
-                    <MasterPageItemClass:MasterPageItem Title="Vehicle Logbook"  IconSource="mileage_icon.png" TargetType="{x:Type MenuPages:VehicleLogbook}"/>
-                    <MasterPageItemClass:MasterPageItem Title="Receipt"  IconSource="receipts_icon.png" TargetType="{x:Type MenuPages:Receipt}"/>
-                    <MasterPageItemClass:MasterPageItem Title="Request Appointment"  IconSource="appointment_icon.png" TargetType="{x:Type MenuPages:RequestAppointment}"/>
-                    <MasterPageItemClass:MasterPageItem Title="Locate Us"  IconSource="findus_icon.png" TargetType="{x:Type MenuPages:LocateUs}"/>
+                    <MasterPageItemClass:MasterPageItem Title="Profile" IconSource="profile_24.png" TargetType="{x:Type MenuPages:Profile1}"/>
+                    <MasterPageItemClass:MasterPageItem Title="Dashboard" IconSource="home_24.png" TargetType="{x:Type MenuPages:Dashboard}" />
+                    <MasterPageItemClass:MasterPageItem Title="Notifications" IconSource="notif_24.png" TargetType="{x:Type MenuPages:Notifications}" />
+                    <MasterPageItemClass:MasterPageItem Title="Share Workspace" IconSource="share_24.png" TargetType="{x:Type MenuPages:ShareWorkspace}" />
+                    <MasterPageItemClass:MasterPageItem Title="Vehicle Logbook" IconSource="vehicle_24.png" TargetType="{x:Type MenuPages:VehicleLogbook}"/>
+                    <MasterPageItemClass:MasterPageItem Title="Receipts" IconSource="receipt_24.png" TargetType="{x:Type MenuPages:Receipt}"/>
+                    <MasterPageItemClass:MasterPageItem Title="Request Appointment" IconSource="appointment_24.png" TargetType="{x:Type MenuPages:RequestAppointment}"/>
+                    <MasterPageItemClass:MasterPageItem Title="Locate Us" IconSource="locate_24.png" TargetType="{x:Type MenuPages:LocateUs}"/>
                  </x:Array>
 
 
