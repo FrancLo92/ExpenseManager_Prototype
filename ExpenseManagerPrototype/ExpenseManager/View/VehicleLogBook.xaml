@@ -55,7 +55,7 @@
              <!--Vehicle List outer container-->
                 <StackLayout IsVisible="False"
                              x:Name="vehicleListOuterContainer"
-                             Margin="10">
+                             Margin="25,10,25,10">
 
                     <Label Text="Select Vehicle"/>
 
@@ -105,7 +105,7 @@
                 <!--Selected Vehilce Layout-->
                 <StackLayout x:Name="selectedVehicleOuterContainer"
                              Orientation="Vertical"
-                             Margin="10, 20, 10, 10">
+                             Margin="25, 20, 25, 10">
                     
                     <Label Text="Selected Vehicle"/>
 
@@ -133,13 +133,15 @@
                         </StackLayout>
                            
                         <!--Edit Vehicle Button-->
-                        <ImageButton x:Name="editVehiclebtn"
+                            <ImageButton x:Name="editVehiclebtn"
                                      Clicked="editVehiclebtn_Clicked"
-                                 Source="edit_icon.png"
+                                 Source="edit_40.png"
                                  HorizontalOptions="End"
-                                 BackgroundColor="Transparent"/>
+                                 BackgroundColor="Transparent">
+                                
+                            </ImageButton>
 
-                    </StackLayout>
+                        </StackLayout>
 
                     
 
@@ -148,7 +150,7 @@
 
                 <!--Trip List outer container-->
                 <StackLayout x:Name="tripListOuterContainer"
-                             Margin="10,30,10,10">
+                             Margin="25,30,25,10">
 
                     <Label Text="Vehicle Trip List"
                            FontSize="Medium"/>

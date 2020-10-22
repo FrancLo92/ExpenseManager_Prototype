@@ -51,7 +51,7 @@
 
                 <!--Total Receipt Amount-->
                 <StackLayout Grid.Row="1"
-                        Margin="5"
+                        Margin="25,10,25,10"
                         HorizontalOptions="Fill">
 
                     <Label Text="Total (including GST)"/>
@@ -61,7 +61,7 @@
 
                 <!--Tax-->
                 <StackLayout Grid.Row="2"
-                        Margin="5"
+                        Margin="25,10,25,10"
                         HorizontalOptions="Fill">
 
                     <Label Text="Tax"/>
@@ -71,7 +71,7 @@
 
                 <!--ABN-->
                 <StackLayout Grid.Row="3"
-                        Margin="5"
+                        Margin="25,10,25,10"
                         HorizontalOptions="Fill">
 
                     <Label Text="ABN"/>
@@ -82,7 +82,7 @@
 
                 <!--Date-->
                 <StackLayout Grid.Row="4"
-                        Margin="5"
+                        Margin="25,10,25,10"
                         HorizontalOptions="Fill">
 
                     <Label Text="Date"/>
@@ -93,7 +93,7 @@
 
                 <!--Merchant-->
                 <StackLayout Grid.Row="5"
-                        Margin="5"
+                        Margin="25,10,25,10"
                         HorizontalOptions="Fill">
 
                     <Label Text="Merchant"/>
@@ -104,7 +104,7 @@
 
                 <!--Tags-->
                 <StackLayout Grid.Row="6"
-                        Margin="5"
+                        Margin="25,10,25,10"
                         HorizontalOptions="Fill">
 
                     <Label Text="Tags"/>
@@ -136,8 +136,9 @@
                 <Button Text="Delete This Receipt" 
                         Grid.Row="7"
                         x:Name="deleteReceiptBtn"
+                        BackgroundColor="{StaticResource SecondaryColor}"
                         Clicked="deleteReceiptBtn_Clicked"
-                        Margin="10"/>
+                        Margin="50,25,50,30"/>
             </Grid>
 
         </ScrollView>

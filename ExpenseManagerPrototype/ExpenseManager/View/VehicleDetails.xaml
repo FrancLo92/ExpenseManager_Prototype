@@ -40,7 +40,7 @@
 
             <!--License Plate-->
             <StackLayout Grid.Row="2"
-                        Margin="10"
+                        Margin="25,10,25,10"
                         HorizontalOptions="Fill">
 
                 <Label Text="License Plate"/>
@@ -50,7 +50,7 @@
 
             <!--Make-->
             <StackLayout Grid.Row="3"
-                        Margin="10"
+                        Margin="25,10,25,10"
                         HorizontalOptions="Fill">
 
                 <Label Text="Make"/>
@@ -60,7 +60,7 @@
 
             <!--Model-->
             <StackLayout Grid.Row="4"
-                        Margin="10"
+                        Margin="25,10,25,10"
                         HorizontalOptions="Fill">
 
                 <Label Text="Model"/>
@@ -71,7 +71,7 @@
 
             <!--Year-->
             <StackLayout Grid.Row="5"
-                        Margin="10"
+                        Margin="25,10,25,10"
                         HorizontalOptions="Fill">
 
                 <Label Text="Year"/>
@@ -82,7 +82,7 @@
 
             <!--Engine Capacity-->
             <StackLayout Grid.Row="6"
-                        Margin="10"
+                        Margin="25,10,25,10"
                         HorizontalOptions="Fill">
 
                 <Label Text="Engine Capacity"/>
@@ -93,7 +93,7 @@
 
             <!--Odometer reading-->
             <StackLayout Grid.Row="7"
-                        Margin="10"
+                        Margin="25,10,25,10"
                         HorizontalOptions="Fill">
 
                 <Label Text="Odometer Reading"/>
@@ -108,7 +108,7 @@
                         Clicked="deleteVehicleBtn_Clicked"
                         Text="Delete Vehicle"
                         Grid.Row="8"
-                        Margin="10"/>
+                        Margin="50,25,50,30"/>
                 
             </Grid>
         </ScrollView>

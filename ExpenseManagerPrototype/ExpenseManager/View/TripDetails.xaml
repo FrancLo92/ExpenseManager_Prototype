@@ -51,7 +51,7 @@
                 <!--START DATE-->
                 <StackLayout Grid.Column="0" 
                          Grid.Row="2"
-                         Margin="10"
+                         Margin="25,10,25,10"
                          HorizontalOptions="Fill">
 
                     <Label Text="Start Date"/>
@@ -62,7 +62,7 @@
                 <!--END DATE-->
                 <StackLayout Grid.Column="1" 
                          Grid.Row="2"
-                         Margin="10"
+                         Margin="25,10,25,10"
                          HorizontalOptions="Fill">
 
                     <Label Text="End Date"/>
@@ -73,7 +73,7 @@
                 <!--VEHICLE LIST-->
                 <StackLayout Grid.ColumnSpan="2" 
                          Grid.Row="3"
-                         Margin="10"
+                         Margin="25,10,25,10"
                          HorizontalOptions="Fill">
 
                     <Label Text="Select Vehicle"/>
@@ -95,7 +95,7 @@
                         </Frame>
 
                         <Frame Padding="10"
-                               BorderColor="{StaticResource OutlineColor}">
+                               BackgroundColor="{StaticResource SecondaryColor}">
                             <Label Text="Car3"
                                    HorizontalOptions="Center"
                                    VerticalOptions="Center"/>
@@ -107,7 +107,7 @@
 
                 <StackLayout Grid.ColumnSpan="2" 
                          Grid.Row="4"
-                         Margin="10"
+                         Margin="25,10,25,10"
                          HorizontalOptions="Fill">
 
                     <Label Text="Distance Travelled"/>
@@ -117,7 +117,7 @@
 
                 <StackLayout Grid.Column="0" 
                          Grid.Row="5"
-                         Margin="10"
+                         Margin="25,10,25,10"
                          HorizontalOptions="Fill">
 
                     <Label Text="Odometer"/>
@@ -127,7 +127,7 @@
 
                 <StackLayout Grid.Column="1" 
                          Grid.Row="5"
-                         Margin="10"
+                         Margin="25,10,25,10"
                          Orientation="Horizontal"
                          HorizontalOptions="Start">
 
@@ -142,7 +142,7 @@
                 <!--Location - From-->
                 <StackLayout Grid.ColumnSpan="2" 
                          Grid.Row="6"
-                         Margin="10"
+                         Margin="25,10,25,10"
                          HorizontalOptions="Fill">
 
                     <Label Text="From"/>
@@ -153,7 +153,7 @@
                 <!--Location - To-->
                 <StackLayout Grid.ColumnSpan="2" 
                          Grid.Row="7"
-                         Margin="10"
+                         Margin="25,10,25,10"
                          HorizontalOptions="Fill">
 
                     <Label Text="To"/>
@@ -165,7 +165,7 @@
                 <!--Tags-->
                 <StackLayout Grid.ColumnSpan="2" 
                          Grid.Row="8"
-                         Margin="10"
+                         Margin="25,10,25,10"
                          HorizontalOptions="Fill">
 
                     <Label Text="PURPOSE OF TRIP"/>
@@ -181,10 +181,11 @@
                 <!--Delete Trip Button-->
                 <Button x:Name="deleteTripBtn"
                         Clicked="deleteTripBtn_Clicked"
+                        BackgroundColor="{StaticResource SecondaryColor}"
                         Text="Delete Trip"
                         Grid.ColumnSpan="2" 
                         Grid.Row="9"
-                        Margin="10"/>
+                        Margin="50,25,50,30"/>
 
             </Grid>
         </ScrollView>
