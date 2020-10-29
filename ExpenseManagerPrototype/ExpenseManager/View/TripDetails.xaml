@@ -86,6 +86,7 @@
                                BackgroundColor="{StaticResource PrimaryColor}"
                                CornerRadius="25">
                             <Label Text="Car1"
+                                   TextColor="{StaticResource NormalTextColor}"
                                    HorizontalOptions="Center"
                                    VerticalOptions="Center"/>
                         </Frame>
@@ -94,6 +95,7 @@
                                BackgroundColor="{StaticResource PrimaryColor}"
                                CornerRadius="25">
                             <Label Text="Car2"
+                                   TextColor="{StaticResource NormalTextColor}"
                                    HorizontalOptions="Center"
                                    VerticalOptions="Center"/>
                         </Frame>
@@ -102,6 +104,7 @@
                                BackgroundColor="{StaticResource SecondaryColor}"
                                CornerRadius="25">
                             <Label Text="Car3"
+                                   TextColor="{StaticResource NormalTextColor}"
                                    HorizontalOptions="Center"
                                    VerticalOptions="Center"/>
                         </Frame>
@@ -177,7 +180,7 @@
 
                     <StackLayout Orientation="Horizontal">
 
-                        <Button Text="Business" />
+                        <Button Text="Business"/>
                         <Button Text="Personal" />
 
                     </StackLayout>

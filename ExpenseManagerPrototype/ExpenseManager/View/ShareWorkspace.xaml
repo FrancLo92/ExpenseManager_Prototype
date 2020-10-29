@@ -30,25 +30,28 @@
                    Margin="0,0,10,0"/>
             <StackLayout Grid.Row="1"/>
 
-            <Label Text="Share Workspace!"
+            <Label Text="Share Workspace"
                    Grid.Row="2"
-                   Margin="30"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-
-            <Label Text="Do you want to give Kalculators access to your information?" 
-                   Grid.Row="3"
-                   VerticalOptions="StartAndExpand" 
+                   Margin="0,0,0,20"
+                   VerticalOptions="CenterAndExpand" 
                    HorizontalOptions="CenterAndExpand"
-                   Margin="50,20,30,20"
-                   HorizontalTextAlignment="Center"/>
+                   FontSize="Title"
+                   TextColor="{StaticResource NormalTextColor}"/>
 
-            <Switch IsToggled="false" VerticalOptions="Start" 
+            <Label Text="Do you want to give Kalculators access to your information? Toggle on the switch below and your receipts will be sent to The Kalculators for your tax appointment." 
+                   Grid.Row="3"
+                   VerticalOptions="Fill"
+                   HorizontalTextAlignment="Center"
+                   Margin="25,5,25,20"/>
+
+            <Switch IsToggled="false"
+                    VerticalOptions="Start" 
+                    Margin="0,20,0,20"
                     HorizontalOptions="CenterAndExpand"
                     OnColor="{StaticResource PrimaryColor}"
                     Grid.Row="4" Scale="1.5"/>
 
-            <Label Text="Simply share this code with your Kalculators Consultant, and they will be able to download your receipts directly and include them in your tax return. The consultant will not be able to modify your information,and disabling the feature at any point will remove their access." VerticalOptions="StartAndExpand" 
+            <!--<Label Text="Simply share this code with your Kalculators Consultant, and they will be able to download your receipts directly and include them in your tax return. The consultant will not be able to modify your information,and disabling the feature at any point will remove their access." VerticalOptions="StartAndExpand" 
                    HorizontalOptions="CenterAndExpand"
                    Grid.Row="5"
                    Margin="30,20,30,0"
@@ -67,7 +70,7 @@
                 <BoxView BackgroundColor="{StaticResource SecondaryColor}"  HorizontalOptions="CenterAndExpand"/>
                 <BoxView BackgroundColor="{StaticResource SecondaryColor}"  HorizontalOptions="CenterAndExpand"/>
                 <BoxView BackgroundColor="{StaticResource SecondaryColor}"  HorizontalOptions="CenterAndExpand"/>
-            </StackLayout>
+            </StackLayout>-->
         </Grid>
     </ContentPage.Content>
 </ContentPage>

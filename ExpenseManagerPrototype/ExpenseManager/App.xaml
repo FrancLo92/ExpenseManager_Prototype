@@ -11,6 +11,7 @@
         <!-- Colors -->
         <Color x:Key="AppBackgroundColor">White</Color>
         <Color x:Key="PrimaryColor">#1a9de5</Color>
+        <Color x:Key="DashButtonColor">#f1f1f1</Color>
         <Color x:Key="SecondaryColor">#FF8B45</Color>
         <Color x:Key="OutlineColor">Black</Color>
         <Color x:Key="ButtonBarTextColor">Black</Color>

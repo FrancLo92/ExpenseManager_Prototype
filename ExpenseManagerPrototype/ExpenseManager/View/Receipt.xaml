@@ -4,8 +4,7 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="ExpenseManager.View.Receipt"
-             Title="Receipt">
+             x:Class="ExpenseManager.View.Receipt">
 
     <!--TOOLBAR ITEMS-->
     <!--Add Vehicle button Located in the Toolbar-->
@@ -45,8 +44,11 @@
                 <StackLayout x:Name="tripListOuterContainer"
                              Margin="25,0,25,10">
 
-                    <Label Text="Receipt List"
-                           FontSize="Medium"/>
+                        <Label Text="Receipt List"
+                               Margin="0, 0, 0, 10"
+                               HorizontalOptions="Center"
+                               FontSize="Title"
+                               TextColor="{StaticResource NormalTextColor}"/>
 
                     <!-- This list is bound to the trip object. 
                     each car has his own trip list object-->

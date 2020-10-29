@@ -24,9 +24,12 @@
                 <StackLayout Grid.Row="1"/>
 
                 <StackLayout Grid.Row="2">
-                    <Label Text="Notifications!"
+                    <Label Text="Notifications"
                            VerticalOptions="CenterAndExpand"
-                           HorizontalOptions="CenterAndExpand" />
+                           Margin="0, 0, 0, 10"
+                           HorizontalOptions="Center"
+                           FontSize="Title"
+                           TextColor="{StaticResource NormalTextColor}"/>
                     <Label Text="No new notifications!"
                            VerticalOptions="CenterAndExpand"
                            HorizontalOptions="CenterAndExpand" />  

@@ -76,7 +76,7 @@
                                             HeightRequest="100"
                                             WidthRequest="100"
                                             Margin="5"
-                                            BackgroundColor="LightGray">
+                                            BackgroundColor="{StaticResource DashButtonColor}">
                                         <!--Number Plate-->
                                         <Label Text="{Binding numberPlate}"
                                         FontAttributes="Bold"
@@ -225,7 +225,10 @@
 
                 </StackLayout>
                 <Button Clicked="Button_Clicked"
-                        Text="NEW GPS TRIP"/>
+                        Text="NEW GPS TRIP"
+                        VerticalOptions="End"
+                        BackgroundColor="{StaticResource SecondaryColor}"
+                        Margin=" 50,0,50,25"/>
                 </StackLayout>
             </Grid>
         </ScrollView>

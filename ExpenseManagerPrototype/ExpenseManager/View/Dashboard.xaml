@@ -16,42 +16,39 @@
     <ContentPage.Content>
         <ScrollView>
             <!--Dashboard Grid Layout-->
-            <Grid Padding="0,10,0,0">
+            <Grid Padding="0,10,0,10">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="80"/>
-                    <RowDefinition Height="45"/>
+                    <RowDefinition Height="12"/>
+                    <RowDefinition Height="150"/>
+                    <RowDefinition Height="150"/>
                     <RowDefinition Height="150"/>
                     <RowDefinition Height="150"/>
                 </Grid.RowDefinitions>
 
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
 
                 <!--Header-->
                 <Image Source="logo.png"                   
                    Grid.Row="0"
-                   Grid.ColumnSpan="2"
                    HorizontalOptions="End"
                    Margin="0,0,10,0"/>
-                <StackLayout Grid.Row="1"
-                         Grid.ColumnSpan="2"/>
+                <StackLayout Grid.Row="1"/>
 
 
                 <!--Record GPS Trip-->
                 <Button x:Name="recordGpsTripBtn"
                         Grid.Row="2"
-                        Grid.Column="0"
                         VerticalOptions="Fill"
                         HorizontalOptions="Fill"
                         Clicked="recordGpsTripBtn_Clicked"
                         BackgroundColor="Transparent"/>
 
                 <StackLayout Grid.Row="2"
-                         Grid.Column="0"
-                         Margin="25,0,4,0">
-                    <Frame BackgroundColor="{StaticResource PrimaryColor}"
+                         Margin="25,8,25,0">
+                    <Frame BackgroundColor="{StaticResource DashButtonColor}"
                            CornerRadius="25"
                            HorizontalOptions="Fill"
                            VerticalOptions="FillAndExpand"
@@ -76,7 +73,7 @@
                             <Label Text="Record GPS trip"
                                VerticalOptions="StartAndExpand"
                                HorizontalOptions="Center"
-                               FontSize="14"
+                               FontSize="Subtitle"
                                TextColor="{StaticResource ButtonBarTextColor}"/>
                         </StackLayout>
                     </Frame>
@@ -84,16 +81,14 @@
 
                 <!--Custom Frame Corners GPS Trip-->
                 <Frame Grid.Row="2"
-                       Grid.Column="0"
-                       Margin="25,0,4,0"
-                       BackgroundColor="{StaticResource PrimaryColor}"
+                       Margin="25,8,25,0"
+                       BackgroundColor="{StaticResource DashButtonColor}"
                        HorizontalOptions="Start"
                        VerticalOptions="Start"
                        HasShadow="False"/>
                 <Frame Grid.Row="2"
-                       Grid.Column="0"
-                       Margin="25,0,4,0"
-                       BackgroundColor="{StaticResource PrimaryColor}"
+                       Margin="25,8,25,0"
+                       BackgroundColor="{StaticResource DashButtonColor}"
                        HorizontalOptions="End"
                        VerticalOptions="End"
                        HasShadow="False"/>
@@ -101,17 +96,15 @@
 
                 <!--Scan Receipt-->
                 <Button x:Name="scanReceiptBtn"
-                        Grid.Row="2"
-                        Grid.Column="1"
+                        Grid.Row="3"
                         VerticalOptions="Fill"
                         HorizontalOptions="Fill"
                         Clicked="scanReceiptBtn_Clicked"
                         BackgroundColor="Transparent"/>
                 
-                <StackLayout Grid.Row="2"
-                         Grid.Column="1"
-                         Margin="4,0,25,0">
-                    <Frame BackgroundColor="{StaticResource PrimaryColor}"
+                <StackLayout Grid.Row="3"
+                         Margin="25,8,25,0">
+                    <Frame BackgroundColor="{StaticResource DashButtonColor}"
                            CornerRadius="25"
                            HorizontalOptions="Fill"
                            VerticalOptions="FillAndExpand"
@@ -136,24 +129,22 @@
                             <Label Text="Scan Receipt"
                                VerticalOptions="StartAndExpand"
                                HorizontalOptions="Center"
-                               FontSize="14"
+                               FontSize="Subtitle"
                                TextColor="{StaticResource ButtonBarTextColor}"/>
                         </StackLayout>
                     </Frame>
                 </StackLayout>
 
                 <!--Custom Frame Corners Receipt-->
-                <Frame Grid.Row="2"
-                       Grid.Column="1"
-                       Margin="4,0,25,0"
-                       BackgroundColor="{StaticResource PrimaryColor}"
+                <Frame Grid.Row="3"
+                       Margin="25,8,25,0"
+                       BackgroundColor="{StaticResource DashButtonColor}"
                        HorizontalOptions="Start"
                        VerticalOptions="Start"
                        HasShadow="False"/>
-                <Frame Grid.Row="2"
-                       Grid.Column="1"
-                       Margin="4,0,25,0"
-                       BackgroundColor="{StaticResource PrimaryColor}"
+                <Frame Grid.Row="3"
+                       Margin="25,8,25,0"
+                       BackgroundColor="{StaticResource DashButtonColor}"
                        HorizontalOptions="End"
                        VerticalOptions="End"
                        HasShadow="False"/>
@@ -161,17 +152,15 @@
 
                 <!--Request Appointment-->
                 <Button x:Name="requestAppointmentBtn"
-                        Grid.Row="3"
-                        Grid.Column="0"
+                        Grid.Row="4"
                         VerticalOptions="Fill"
                         HorizontalOptions="Fill"
                         Clicked="requestAppointmentBtn_Clicked"
                         BackgroundColor="Transparent"/>
 
-                <StackLayout Grid.Row="3"
-                         Grid.Column="0"
-                         Margin="25,8,4,0">
-                    <Frame BackgroundColor="{StaticResource PrimaryColor}"
+                <StackLayout Grid.Row="4"
+                         Margin="25,8,25,0">
+                    <Frame BackgroundColor="{StaticResource DashButtonColor}"
                            CornerRadius="25"
                            HorizontalOptions="Fill"
                            VerticalOptions="FillAndExpand"
@@ -197,24 +186,22 @@
                             <Label Text="Request Appointment"
                             VerticalOptions="StartAndExpand"
                             HorizontalOptions="Center"
-                            FontSize="14"
+                            FontSize="Subtitle"
                             TextColor="{StaticResource ButtonBarTextColor}"/>
                         </StackLayout>
                     </Frame>
                 </StackLayout>
 
                 <!--Custom Frame Corners Request Appointment-->
-                <Frame Grid.Row="3"
-                       Grid.Column="0"
-                       Margin="25,8,4,0"
-                       BackgroundColor="{StaticResource PrimaryColor}"
+                <Frame Grid.Row="4"
+                       Margin="25,8,25,0"
+                       BackgroundColor="{StaticResource DashButtonColor}"
                        HorizontalOptions="Start"
                        VerticalOptions="Start"
                        HasShadow="False"/>
-                <Frame Grid.Row="3"
-                       Grid.Column="0"
-                       Margin="25,8,4,0"
-                       BackgroundColor="{StaticResource PrimaryColor}"
+                <Frame Grid.Row="4"
+                       Margin="25,8,25,0"
+                       BackgroundColor="{StaticResource DashButtonColor}"
                        HorizontalOptions="End"
                        VerticalOptions="End"
                        HasShadow="False"/>
@@ -222,17 +209,15 @@
 
                 <!--Locate Us-->
                 <Button x:Name="locateUsBtn"
-                        Grid.Row="3"
-                        Grid.Column="1"
+                        Grid.Row="5"
                         VerticalOptions="Fill"
                         HorizontalOptions="Fill"
                         Clicked="locateUsBtn_Clicked"
                         BackgroundColor="Transparent"/>
 
-                <StackLayout Grid.Row="3"
-                         Grid.Column="1"
-                         Margin="4,8,25,0">
-                    <Frame BackgroundColor="{StaticResource PrimaryColor}"
+                <StackLayout Grid.Row="5"
+                         Margin="25,8,25,0">
+                    <Frame BackgroundColor="{StaticResource DashButtonColor}"
                            CornerRadius="25"
                            HorizontalOptions="Fill"
                            VerticalOptions="FillAndExpand"
@@ -258,24 +243,22 @@
                             <Label Text="Locate Us"
                             VerticalOptions="StartAndExpand"
                             HorizontalOptions="Center"
-                            FontSize="14"
+                            FontSize="Subtitle"
                             TextColor="{StaticResource ButtonBarTextColor}"/>
                         </StackLayout>
                     </Frame>
                 </StackLayout>
 
                 <!--Custom Frame Corners Locate Us-->
-                <Frame Grid.Row="3"
-                       Grid.Column="1"
-                       Margin="4,8,25,0"
-                       BackgroundColor="{StaticResource PrimaryColor}"
+                <Frame Grid.Row="5"
+                       Margin="25,8,25,0"
+                       BackgroundColor="{StaticResource DashButtonColor}"
                        HorizontalOptions="Start"
                        VerticalOptions="Start"
                        HasShadow="False"/>
-                <Frame Grid.Row="3"
-                       Grid.Column="1"
-                       Margin="4,8,25,0"
-                       BackgroundColor="{StaticResource PrimaryColor}"
+                <Frame Grid.Row="5"
+                       Margin="25,8,25,0"
+                       BackgroundColor="{StaticResource DashButtonColor}"
                        HorizontalOptions="End"
                        VerticalOptions="End"
                        HasShadow="False"/>
